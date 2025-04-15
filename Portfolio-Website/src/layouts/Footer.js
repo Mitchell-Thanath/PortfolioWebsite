@@ -5,12 +5,9 @@ const Footer = () => {
         <div className="container">
           <div className="copyright_inner">
             <div className="top">
-              <div className="logo">
-                <img src="img/logo/logo.png" alt="aali image" />
-              </div>
               <div className="social">
-                <span>Connect</span>
-                <ul>
+                {/* <span>Connect</span> */}
+                {/* <ul>
                   <li>
                     <a href="#">
                       <i className="icon-facebook-1" />
@@ -26,27 +23,16 @@ const Footer = () => {
                       <i className="icon-instagram-3" />
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
             <div className="bottom">
               <div className="left">
-                <p>
-                  Designed with love by{" "}
-                  <a
-                    className="line_anim"
-                    href="https://themeforest.net/user/codeefly"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Codeefly
-                  </a>{" "}
-                  © {new Date().getFullYear()}
-                </p>
+             
               </div>
               <div className="right">
                 <ul>
-                  <li>
+                  {/* <li>
                     <a className="line_anim" href="#">
                       Terms &amp; Condition
                     </a>
@@ -60,7 +46,7 @@ const Footer = () => {
                     <a className="line_anim" href="#">
                       Support
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

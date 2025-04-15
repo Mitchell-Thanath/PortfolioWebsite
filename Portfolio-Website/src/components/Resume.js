@@ -7,7 +7,7 @@ const Resume = () => {
     jarallaxContent();
   }, []);
   return (
-    <div className="aali_tm_section">
+    <div className="aali_tm_section" id="resume">
       <div className="aali_tm_resume">
         <div className="content">
           <div className="container">
@@ -17,12 +17,12 @@ const Resume = () => {
                 data-text-align="left"
                 data-color="dark"
               >
-                <span>Know More</span>
+                <span></span>
                 <h3>My Resume</h3>
-                <p>
+                {/* <p>
                   I enjoy every step of the design process, from discussion and
                   collaboration to concept and execution
-                </p>
+                </p> */}
               </div>
               <div className="content_inner">
                 <ul>
@@ -36,17 +36,16 @@ const Resume = () => {
                           <span className="icon">{edu}</span>
                           <div className="info">
                             <div className="left">
-                              <h3>Cognitive Sciences</h3>
-                              <span>University of Maine</span>
+                              <h3>University of Florida</h3>
+                              <span>BS in Computer Science Engineering</span>
                             </div>
                             <div className="right">
-                              <span>2018 - 2020</span>
+                              <span>2020 - 2023</span>
                             </div>
                           </div>
                           <div className="text">
                             <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
+                              Minor in Mathematics
                             </p>
                           </div>
                         </div>
@@ -56,37 +55,16 @@ const Resume = () => {
                           <span className="icon">{edu}</span>
                           <div className="info">
                             <div className="left">
-                              <h3>Civil Engineering</h3>
-                              <span>University of Texas</span>
+                              <h3>Massachusetts Institute of Technology</h3>
+                              <span>Data Science Professional Certification</span>
                             </div>
                             <div className="right">
-                              <span>2014 - 2018</span>
+                              <span>2024</span>
                             </div>
                           </div>
                           <div className="text">
                             <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon">{edu}</span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Bachelor of Science</h3>
-                              <span>Univercity of Oxford</span>
-                            </div>
-                            <div className="right">
-                              <span>2012 - 2014</span>
-                            </div>
-                          </div>
-                          <div className="text">
-                            <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
+                              <span style={{ textDecoration: 'underline' }}>Courses</span>: Foundations for Data Science, Data Analysis & Visualization, Machine Learning, Practical Data Science, Deep Learning, Recommendation Systems
                             </p>
                           </div>
                         </div>
@@ -103,17 +81,16 @@ const Resume = () => {
                           <span className="icon">{exp}</span>
                           <div className="info">
                             <div className="left">
-                              <h3>Product Designer</h3>
-                              <span>Easy Computers</span>
+                              <h3>Full Stack Developer</h3>
+                              <span>Abacus Global Management</span>
                             </div>
                             <div className="right">
-                              <span>2018 - running</span>
+                              <span>2023 - Present</span>
                             </div>
                           </div>
                           <div className="text">
                             <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
+                              Developing and maintaining full-stack applications in a fast-paced startup environment
                             </p>
                           </div>
                         </div>
@@ -123,37 +100,16 @@ const Resume = () => {
                           <span className="icon">{exp}</span>
                           <div className="info">
                             <div className="left">
-                              <h3>UI/UX Expert</h3>
-                              <span>eTheme Group</span>
+                              <h3>Simulation Developer</h3>
+                              <span>CAE USA</span>
                             </div>
                             <div className="right">
-                              <span>2015 - 2018</span>
+                              <span>2022 - 2023</span>
                             </div>
                           </div>
                           <div className="text">
                             <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="list_inner">
-                          <span className="icon">{exp}</span>
-                          <div className="info">
-                            <div className="left">
-                              <h3>Senior Developer</h3>
-                              <span>Envato Studio</span>
-                            </div>
-                            <div className="right">
-                              <span>2012 - 2018</span>
-                            </div>
-                          </div>
-                          <div className="text">
-                            <p>
-                              Aali is a leading web design agency with an
-                              award-winning design
+                              Developed and maintained simulation software for training systems
                             </p>
                           </div>
                         </div>
@@ -164,25 +120,6 @@ const Resume = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="media" data-background-style="video">
-          {" "}
-          {/* Background Styles: "video" and "image" // Also you can use any youtube, vimeo, and local videos */}
-          <div
-            className="video jarallax"
-            data-speed={0}
-            data-jarallax-video="https://vimeo.com/337293658"
-          />
-          <div
-            className="image jarallax"
-            data-speed={0}
-            data-img-url="img/about/2.jpg"
-          />
-          <span
-            className="square moving_effect"
-            data-direction="y"
-            data-reverse="yes"
-          />
         </div>
       </div>
     </div>

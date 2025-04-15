@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import { call, emailIcon, msgSent } from "../svgImage";
+import { emailIcon, linkedin, msgSent } from "../svgImage";
 
 const Contact = () => {
   const [mailData, setMailData] = useState({
@@ -10,38 +10,56 @@ const Contact = () => {
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
-  const onSubmit = (e) => {
+
+  const onSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
+      setError("Please fill in all required fields");
       clearError();
-    } else {
-      emailjs
-        .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
-          mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!email.includes('@') || !email.includes('.')) {
+      setError("Please enter a valid email address");
+      clearError();
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const response = await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        mailData,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
+
+      if (response.status === 200) {
+        setError(false);
+        setMailData({ name: "", email: "", message: "" });
+      }
+    } catch (err) {
+      console.error("Failed to send email:", err);
+      setError("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+      clearError();
     }
   };
+
   const clearError = () => {
     setTimeout(() => {
       setError(null);
-    }, 2000);
+    }, 5000);
   };
+
   return (
     <div className="aali_tm_section" id="contact">
       <div className="aali_tm_contact">
@@ -51,33 +69,36 @@ const Contact = () => {
             data-text-align="center"
             data-color="dark"
           >
-            <span>Get in Touch</span>
             <h3>Connect with Me with Confidence</h3>
           </div>
           <div className="contact_inner">
             <div className="left wow fadeInLeft" data-wow-duration="1s">
-              <div className="text">
+              {/* <div className="text">
                 <p>
                   Please fill out the form on this section to contact with me.
                   Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through
                   Friday
                 </p>
-              </div>
+              </div> */}
               <ul>
-                <li>
-                  <div className="list_inner">
-                    {call}
-                    <span>Call me</span>
-                    <h3>+1234 5678 9000</h3>
-                  </div>
-                </li>
                 <li>
                   <div className="list_inner">
                     {emailIcon}
                     <span>Email</span>
                     <h3>
-                      <a className="line_anim" href="mailto:hello@aali.com">
-                        hello@aali.com
+                      <a className="line_anim" href="mailto:mitchellthanath@gmail.com">
+                        mitchellthanath@gmail.com
+                      </a>
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div className="list_inner">
+                    {linkedin}
+                    <span>LinkedIn</span>
+                    <h3>
+                      <a className="line_anim" href="https://www.linkedin.com/in/mitchell-thanath" target="_blank" rel="noopener noreferrer">
+                        www.linkedin.com/in/mitchell-thanath
                       </a>
                     </h3>
                   </div>
@@ -92,16 +113,18 @@ const Contact = () => {
                   className="contact_form"
                   id="contact_form"
                   autoComplete="off"
-                  onSubmit={(e) => onSubmit(e)}
+                  onSubmit={onSubmit}
                 >
                   <div
-                    className={error ? "empty_notice" : "returnmessage"}
-                    style={{ display: error == null ? "none" : "block" }}
+                    className={error === true ? "empty_notice" : error === false ? "returnmessage" : "hidden"}
+                    style={{ display: error !== null ? "block" : "none" }}
                   >
                     <span>
-                      {error
-                        ? "Please Fill Required Fields"
-                        : "Your message has been received, We will contact you soon."}
+                      {error === true 
+                        ? "Please fill in all required fields" 
+                        : error === false 
+                          ? "Your message has been received. I'll get back to you soon!" 
+                          : error}
                     </span>
                   </div>
                   <div className="input_list">
@@ -111,19 +134,21 @@ const Contact = () => {
                           id="name"
                           type="text"
                           name="name"
-                          onChange={(e) => onChange(e)}
+                          onChange={onChange}
                           value={name}
                           placeholder="Your Name"
+                          disabled={isSubmitting}
                         />
                       </li>
                       <li>
                         <input
                           id="email"
-                          type="text"
+                          type="email"
                           placeholder="Your Email"
                           name="email"
-                          onChange={(e) => onChange(e)}
+                          onChange={onChange}
                           value={email}
+                          disabled={isSubmitting}
                         />
                       </li>
                     </ul>
@@ -133,14 +158,35 @@ const Contact = () => {
                       id="message"
                       placeholder="Message"
                       name="message"
-                      onChange={(e) => onChange(e)}
+                      onChange={onChange}
                       value={message}
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div className="aali_tm_button">
-                    <a id="send_message" href="#" onClick={(e) => onSubmit(e)}>
-                      <span>Submit Message {msgSent}</span>
-                    </a>
+                    <button 
+                      type="submit" 
+                      id="send_message" 
+                      disabled={isSubmitting}
+                      style={{ 
+                        background: '#007bff',
+                        border: 'none',
+                        padding: '12px 30px',
+                        borderRadius: '4px',
+                        color: 'white',
+                        fontSize: '16px',
+                        cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                        transition: 'all 0.3s ease',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+                      }}
+                    >
+                      <span>
+                        {isSubmitting ? "Sending..." : "Submit Message"} {msgSent}
+                      </span>
+                    </button>
                   </div>
                 </form>
               </div>

@@ -1,4 +1,14 @@
+import { useEffect, useRef } from "react";
+
 const ModalBox = ({ children, close }) => {
+  const descriptionWrapRef = useRef(null);
+
+  useEffect(() => {
+    if (descriptionWrapRef.current) {
+      descriptionWrapRef.current.scrollTop = 0;
+    }
+  }, [children]);
+
   return (
     <div className="aali_tm_modalbox opened">
       <div className="box_inner">
@@ -49,7 +59,7 @@ const ModalBox = ({ children, close }) => {
             </svg>
           </a>
         </div>
-        <div className="description_wrap">{children}</div>
+        <div className="description_wrap" ref={descriptionWrapRef}>{children}</div>
       </div>
     </div>
   );

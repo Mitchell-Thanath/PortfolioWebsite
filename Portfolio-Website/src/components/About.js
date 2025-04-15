@@ -1,4 +1,4 @@
-import { download } from "../svgImage";
+import { download, exp } from "../svgImage";
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
         <div className="about_inner">
           <div className="left">
             <div className="image">
-              <img src="img/thumbs/45-49.jpg" alt="aali image" />
+              {/* <img src="img/thumbs/45-49.jpg" alt="aali image" /> */}
               <div className="main" data-img-url="img/about/1.jpg" />
               <span
                 className="square moving_effect"
@@ -27,12 +27,12 @@ const About = () => {
             <div className="title wow fadeInUp" data-wow-duration="1s">
               <span className="small">About Me</span>
               <h3>
-                {`I'm`} <span>Aali</span>
+                {`I'm`} <span>Mitchell</span>
               </h3>
-              <h3>
+              {/* <h3>
                 Web <span>Designer</span>
-              </h3>
-              <span className="subtitle">Based in London,UK</span>
+              </h3> */}
+              {/* <span className="subtitle">Based in London,UK</span> */}
             </div>
             <div
               className="text wow fadeInUp"
@@ -40,13 +40,20 @@ const About = () => {
               data-wow-delay="0.2s"
             >
               <p>
-                Hi! My name is Aali Walker. I am UI/UX designer, and {`I'm`}{" "}
-                very passionate and dedicated to my work.
+              I'm a Full-Stack Developer with a strong passion for continuous 
+              learning and building impactful applications. 
+              With over 2 years of work experience, I’ve developed everything
+              from responsive frontends, to robust backend
+              systems that serve real user needs.
+              I thrive on challenging projects that require creative problem-solving
+              and push me to expand my technical capabilities.
               </p>
               <p>
-                With 20 years experience as a professional graphic designer and
-                web developer, I have acquired the skills and knowledge
-                necessary to make your project a success.
+              I am also deeply interested in the evolving capabilities of AI and 
+              eager to apply my growing expertise to create innovative solutions 
+              and drive real-world impact. As the field rapidly advances, I am 
+              committed to staying at the forefront by learning and experimenting 
+              with emerging technologies to push boundaries and explore new possibilities.
               </p>
             </div>
             <div
@@ -54,20 +61,14 @@ const About = () => {
               data-wow-duration="1.5s"
               data-wow-delay="0.2s"
             >
-              <a href="img/cv/1.jpg" download>
-                <span>Download CV {download}</span>
+              <a href="#portfolio">
+                <span>View Portfolio {exp}</span>
               </a>
             </div>
           </div>
           <div className="right">
             <div className="image">
-              <img src="img/thumbs/41-61.jpg" alt="aali image" />
               <div className="main" data-img-url="img/about/2.jpg" />
-              <div
-                className="square moving_effect"
-                data-direction="x"
-                data-reverse="no"
-              />
             </div>
           </div>
         </div>

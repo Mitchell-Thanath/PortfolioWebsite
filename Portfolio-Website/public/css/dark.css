@@ -37,10 +37,10 @@ body.dark .aali_tm_header.animate .menu ul li a{
 	color: #fff;
 }
 body.dark .aali_tm_header.animate .menu ul li.current a{
-	color: #ea4343;
+	color: #3b82f6;
 }
 body.dark .aali_tm_header.animate .menu ul li a:hover{
-	color: #ea4343;
+	color: #3b82f6;
 }
 body.dark .aali_tm_about .center .subtitle{
 	color: #fff;
@@ -63,7 +63,7 @@ body.dark .aali_tm_button.border a{
 	color: #fff;
 }
 body.dark .aali_tm_button.border a svg{
-	color: #fff;
+	color: #2563eb;
 }
 body.dark .aali_tm_resume .info .left span{
 	color: #fff;
@@ -75,7 +75,7 @@ body.dark .aali_tm_news .news_list ul li .details .title a{
 	color: #fff;
 }
 body.dark .aali_tm_news .news_list ul li .details .title a:hover{
-	color: #ea4343;
+	color: #3b82f6;
 }
 body.dark .aali_tm_learn_more a{
 	color: #fff;
@@ -109,7 +109,7 @@ body.dark .aali_tm_modalbox .service_popup_informations .main_title span{
 	color: #fff;
 }
 body.dark .aali_tm_modalbox .service_popup_informations .main_title span span{
-	color: #ea4343;
+	color: #3b82f6;
 }
 
 body.dark .aali_tm_modalbox .description_wrap::-webkit-scrollbar{
@@ -139,4 +139,35 @@ body.dark .aali_tm_modalbox .news_popup_informations .details .category a{
 }
 body.dark .aali_tm_modalbox .news_popup_informations .details .title a{
   color: #fff;
+}
+
+body.dark .aali_tm_hero .content .name{
+    color: #3b82f6;
+}
+body.dark .aali_tm_about .center .small{
+    color: #3b82f6;
+}
+body.dark .aali_tm_about .center h3 span{
+    color: #3b82f6;
+}
+body.dark .aali_tm_main_title span{
+    color: #3b82f6;
+}
+body.dark .aali_tm_service .service_list .price span{
+    color: #3b82f6;
+}
+body.dark .aali_tm_news .news_list ul li .details .category a{
+    color: #3b82f6;
+}
+body.dark .aali_tm_news .news_list ul li .details .title a:hover{
+    color: #3b82f6;
+}
+body.dark .aali_tm_contact .left ul li h3{
+    color: #3b82f6;
+}
+body.dark .aali_tm_contact .left ul li a{
+    color: #3b82f6;
+}
+body.dark .aali_tm_copyright .social ul li a{
+    color: #3b82f6;
 }

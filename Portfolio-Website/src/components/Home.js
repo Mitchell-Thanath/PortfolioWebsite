@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fb, insta, msg, twitter } from "../svgImage";
+import { fb, insta, msg, twitter, edu, exp } from "../svgImage";
 import { parallax } from "../utilits";
 
 const Home = () => {
@@ -18,29 +18,29 @@ const Home = () => {
           <div className="hero_inner">
             <div className="content">
               <span className="hello">Hello, {`I'm`}</span>
-              <h3 className="name">Aali</h3>
+              <h3 className="name">Mitchell</h3>
               <div className="job">
                 <span className="cd-headline rotate-1">
                   {" "}
                   {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                  <span className="blc">Creative </span>
+                  <span className="blc">Software </span>
                   <span className="cd-words-wrapper">
                     <b className={text === 1 ? "is-visible" : "is-hidden"}>
-                      Designer
+                      Engineer
                     </b>
                     <b className={text === 2 ? "is-visible" : "is-hidden"}>
                       Developer
                     </b>
                     <b className={text === 3 ? "is-visible" : "is-hidden"}>
-                      Freelancer
+                      Architect 
                     </b>
                   </span>
                 </span>
               </div>
               <div className="hero_buttons">
                 <div className="aali_tm_button">
-                  <a className="anchor" href="#contact">
-                    <span>Say Hello {msg}</span>
+                  <a className="anchor" href="#counter">
+                    <span>View Resume{exp}</span>
                   </a>
                 </div>
                 <div className="simple_button">
@@ -93,7 +93,7 @@ const Home = () => {
             <div className="avatar parallax" style={{ position: "absolute" }}>
               <div className="main">
                 <img
-                  src="img/hero/1.png"
+                  src="img/hero/ProfilePicUF.JPG"
                   alt="image"
                   className="layer"
                   data-depth="0.1"
@@ -115,27 +115,14 @@ const Home = () => {
                 <span className="in layer" data-depth="0.3" />
               </span>
               <h3 className="stroke_text">
-                <span>Aali</span>
+                <span>Mitchell</span>
               </h3>
             </div>
           </div>
         </div>
-        <div className="socials">
-          <ul>
-            <li>
-              <a href="#">{fb}</a>
-            </li>
-            <li>
-              <a href="#">{twitter}</a>
-            </li>
-            <li>
-              <a href="#">{insta}</a>
-            </li>
-          </ul>
-        </div>
         <div className="hero_mail">
           <a className="line_anim" href="#">
-            hello@aali.com
+            mitchellthanath@gmail.com
           </a>
         </div>
       </div>

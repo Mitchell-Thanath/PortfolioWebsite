@@ -116,7 +116,7 @@ body.dark::-webkit-scrollbar {
 }
 
 .container{
-	max-width: 1400px;
+	max-width: 1800px;
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -324,6 +324,14 @@ h6 { font-size: 16px; }
 	float: left;
 	background-color: #fff;
 	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 11;
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+.aali_tm_mobile_menu .dropdown.active{
+	display: block;
 }
 .aali_tm_mobile_menu .dropdown .dropdown_inner{
 	width: 100%;
@@ -430,19 +438,19 @@ h6 { font-size: 16px; }
 	        transition: all .3s ease;
 }
 .aali_tm_header .menu ul li a:hover{
-	color: #ea4343;
+	color: #3b82f6;
 }
 .aali_tm_header .menu ul li.current a{
-	color: #ea4343;
+	color: #3b82f6;
 }
 .aali_tm_header.animate .menu ul li.current a{
-	color: #ea4343;
+	color: #3b82f6;
 }
 .aali_tm_header.animate .menu ul li a{
 	color: #15111e;
 }
 .aali_tm_header.animate .menu ul li a:hover{
-	color: #ea4343;
+	color: #3b82f6;
 }
 
 /*---------------------------------------------------*/
@@ -483,7 +491,7 @@ h6 { font-size: 16px; }
 .aali_tm_hero .content .name{
 	font-size: 150px;
 	font-weight: 700;
-	color: #ea4343;
+	color: #3b82f6;
 	letter-spacing: -.2px;
 	line-height: 1.1;
 }
@@ -525,19 +533,19 @@ h6 { font-size: 16px; }
 	color: #15111e;
 }
 .aali_tm_button.border .svg{
-	color: #ea4343;
+	color: #2563eb;
 }
 .aali_tm_button a{
 	text-decoration: none;
 	color: #fff;
 	font-family: "Josefin Sans";
 	display: inline-block;
-	background-color: #ea4343;
+	background-color: #3b82f6;
 	font-weight: 700;
 	position: relative;
 	padding: 15px 73px 15px 46px;
 	border-radius: 6px;
-	border: 2px solid #ea4343;
+	border: 2px solid #3b82f6;
 	white-space: nowrap;
 	
 	-webkit-transition: all .3s ease;
@@ -560,7 +568,7 @@ h6 { font-size: 16px; }
 	color: #fff;
 }
 .aali_tm_button.border a:hover{
-	background-color: #ea4343;
+	background-color: #3b82f6;
 	color: #fff;
 }
 .aali_tm_button.border a:hover .svg{
@@ -663,7 +671,7 @@ h6 { font-size: 16px; }
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .two{
 	position: absolute;
@@ -672,12 +680,13 @@ h6 { font-size: 16px; }
 	width: 180px;
 	height: 180px;
 	z-index: 2;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .two .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .three{
 	position: absolute;
@@ -686,12 +695,13 @@ h6 { font-size: 16px; }
 	width: 80px;
 	height: 110px;
 	z-index: 2;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .three .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .four{
 	position: absolute;
@@ -701,6 +711,7 @@ h6 { font-size: 16px; }
 	transform: translateY(-50%);
 	right: 20px;
 	z-index: -1;
+	background-color: #2563eb;
 }
 .aali_tm_hero .avatar .four .in{
 	position: absolute;
@@ -730,12 +741,13 @@ h6 { font-size: 16px; }
 	height: 70px;
 	bottom: 32%;
 	right: -180px;
+	background-color: #2563eb;
 }
 .aali_tm_hero .five .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .aali_tm_hero .socials{
 	position: absolute;
@@ -790,7 +802,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 170px 0px 170px 0px;
+	padding: 150px 0px 150px 0px;
+	background-color: #3c3c3c;
 }
 .aali_tm_about .about_inner{
 	width: 100%;
@@ -826,7 +839,7 @@ h6 { font-size: 16px; }
 	position: absolute;
 	width: 270px;
 	height: 270px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 	bottom: -80px;
 	left: -65px;
 	z-index: 0;
@@ -860,7 +873,7 @@ h6 { font-size: 16px; }
 	font-family: "Josefin Sans";
 	font-size: 24px;
 	font-weight: 700;
-	color: #ea4343;
+	color: #2563eb;
 	letter-spacing: -.2px;
 	display: inline-block;
 	margin-bottom: 6px;
@@ -869,15 +882,16 @@ h6 { font-size: 16px; }
 	font-size: 72px;
 	font-weight: 700;
 	letter-spacing: -.2px;
+	color: #fff;
 }
 .aali_tm_about .center h3 span{
-	color: #ea4343;
+	color: #2563eb;
 }
 .aali_tm_about .center .subtitle{
 	font-family: "Josefin Sans";
 	font-size: 36px;
 	font-weight: 700;
-	color: #15111e;
+	color: #fff;
 	letter-spacing: -.2px;
 	display: inline-block;
 	margin-top: 18px;
@@ -889,6 +903,7 @@ h6 { font-size: 16px; }
 }
 .aali_tm_about .text p{
 	margin-bottom: 31px;
+	color: #fff;
 }
 .aali_tm_about .right{
 	width: 25%;
@@ -923,7 +938,7 @@ h6 { font-size: 16px; }
 .aali_tm_about .right .square{
 	width: 1000px;
 	height: 390px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 	position: absolute;
 	left: 100%;
 	margin-left: -200px;
@@ -939,7 +954,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #ba3c3c;
+	background-color: #2563eb;
 	padding: 160px 0px 557px 0px;
 	position: relative;
 }
@@ -986,10 +1001,15 @@ h6 { font-size: 16px; }
 .aali_tm_main_title[data-color="light"] p{
 	color: #fff;
 }
+.aali_tm_main_title[data-color="dark"] span,
+.aali_tm_main_title[data-color="dark"] h3,
+.aali_tm_main_title[data-color="dark"] p{
+	color: #2563eb;
+}
 .aali_tm_main_title span{
 	font-size: 24px;
 	font-family: "Josefin Sans";
-	color: #ea4343;
+	color: #fff;
 	font-weight: 700;
 	letter-spacing: -.2px;;
 	display: inline-block;
@@ -1049,7 +1069,7 @@ h6 { font-size: 16px; }
 }
 .progress_inner .background .bar_in{
 	height:100%;
-	background:#fff;
+	background:#1e40af;
 	width:0px;
 	overflow:hidden;
 	border-radius: 25px 0px 0px 25px;
@@ -1080,7 +1100,7 @@ h6 { font-size: 16px; }
 	float: left;
 }
 .help{
-	margin-top: -500px;
+	margin-top: -675px;
 	padding-top: 100px;
 }
 .aali_tm_portfolio .portfolio_filter{
@@ -1125,36 +1145,41 @@ h6 { font-size: 16px; }
 	list-style-type: none;
 }
 .aali_tm_portfolio .portfolio_list ul li{
-	margin: 0px 0px 25px 0px;
-	width: 33.3333%;
+	width: 33.33%;
+	padding-left: 30px;
+	margin-bottom: 30px;
 	float: left;
-	padding-left: 25px;
 }
 .aali_tm_portfolio .portfolio_list ul li .list_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
 	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
 }
 .aali_tm_portfolio .portfolio_list ul li .list_inner .image{
-	position: relative;
-}
-.aali_tm_portfolio .portfolio_list ul li .list_inner .image img{
-	position: relative;
-	min-width: 100%;
-	opacity: 0;
-}
-.aali_tm_portfolio .portfolio_list ul li .list_inner .image .main{
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+.aali_tm_portfolio .portfolio_list ul li .list_inner .image img{
+	display: none;
+}
+.aali_tm_portfolio .portfolio_list ul li .list_inner .image .main{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.3s ease;
 }
 .aali_tm_portfolio .portfolio_list ul li .list_inner .overlay{
 	position: absolute;
@@ -1163,7 +1188,7 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 	z-index: 1;
-	background-color: rgba(234,67,67,.72);
+	background-color: rgba(37,99,235,.72);
 	border-radius: 10px;
 	opacity: 0;
 	visibility: hidden;
@@ -1263,7 +1288,7 @@ h6 { font-size: 16px; }
 	width: 968px;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: #fff;
+	background-color: #3c3c3c;
 	z-index: 1;
 	opacity: 0;
 	visibility: hidden;
@@ -1311,11 +1336,11 @@ h6 { font-size: 16px; }
 }
 .aali_tm_modalbox .description_wrap{
   scrollbar-width: thin;
-  scrollbar-color: #dfe2e7 #fff;
+  scrollbar-color: #dfe2e7 #3c3c3c;
 }
 .aali_tm_modalbox .description_wrap:-webkit-scrollbar-track,
 .aali_tm_fixed_content .mainbar:-webkit-scrollbar-track{
-  background: #fff;
+  background: #3c3c3c;
 }
 .aali_tm_modalbox .description_wrap::-webkit-scrollbar-thumb,
 .aali_tm_fixed_content .mainbar::-webkit-scrollbar-thumb{
@@ -1335,6 +1360,10 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
+	background-color: #3c3c3c;
+	padding: 40px;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .aali_tm_modalbox .popup_details .top_image{
 	position: relative;
@@ -1352,10 +1381,11 @@ h6 { font-size: 16px; }
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	border-radius: 10px;
+	background-color: #f5f5f5;
 }
 .aali_tm_modalbox .portfolio_main_title{
 	width: 100%;
@@ -1472,9 +1502,10 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	border-radius: 10px;
+	background-color: #f5f5f5;
 }
 .aali_tm_full_link{
 	position: absolute;
@@ -1494,7 +1525,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 135px 0px;
+	background-color: #3c3c3c;
+	padding: 150px 0px 150px 0px;
 	position: relative;
 }
 .moving_effect{
@@ -1506,7 +1538,7 @@ h6 { font-size: 16px; }
 	position: absolute;
 	width: 157px;
 	height: 227px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 	top: 35px;
 	right: 0px;
 }
@@ -1514,7 +1546,7 @@ h6 { font-size: 16px; }
 	position: absolute;
 	width: 415px;
 	height: 230px;
-	background-color: #3c3c3c;
+	background-color: #2563eb;
 	bottom: 45px;;
 	left: 0px;
 	z-index: -1;
@@ -1545,9 +1577,17 @@ h6 { font-size: 16px; }
 	position: relative;
 	border-radius: 10px;
 	background-color: #fff;
-	box-shadow: 13px 13px 90px rgba(131,4,4,.06);
+	box-shadow: 0 0 25px rgba(37, 99, 235, 0.3);
+	border: 2px solid #2563eb;
 	padding: 60px 60px 56px 200px;
+	transition: all 0.3s ease;
 }
+
+.aali_tm_service .service_list ul li .list_inner:hover {
+	box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);
+	transform: translateY(-5px);
+}
+
 .aali_tm_service .service_list ul li.simple .list_inner{
 	box-shadow: none;
 	border-radius: 0px;
@@ -1577,7 +1617,7 @@ h6 { font-size: 16px; }
 }
 .aali_tm_service .service_list .price span{
 	font-size: 30px;
-	color: #ea4343;
+	color: #2563eb;
 }
 .aali_tm_service .service_list .icon{
 	position: absolute;
@@ -1669,7 +1709,7 @@ h6 { font-size: 16px; }
 }
 .aali_tm_modalbox .service_popup_informations .main_title span span{
 	font-size: 30px;
-    color: #ea4343;
+    color: #2563eb;
 }
 .aali_tm_modalbox .service_popup_informations .descriptions{
 	width: 100%;
@@ -1692,7 +1732,8 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	position: relative;
-	margin-bottom: 250px;
+	background-color: #fff;
+	padding: 0 0 40px 0;
 }
 .aali_tm_resume .content{
 	width: 100%;
@@ -1700,7 +1741,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	position: relative;
-	padding-top: 160px;
+	padding-top: 0;
 }
 .aali_tm_resume .content_inner{
 	width: 75%;
@@ -1731,7 +1772,7 @@ h6 { font-size: 16px; }
 	content: "";
 	width: 30px;
 	height: 6px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0px;
@@ -1743,7 +1784,7 @@ h6 { font-size: 16px; }
 	width: 48px;
 	height: 48px;
 	border-radius: 100%;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .aali_tm_resume .icon .svg{
 	width: 20px;
@@ -1827,7 +1868,7 @@ h6 { font-size: 16px; }
 .aali_tm_resume .media .square{
 	width: 125px;
 	height: 125px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 	position: absolute;
 	top: 100px;
 	right: 100%;
@@ -1974,7 +2015,7 @@ h6 { font-size: 16px; }
 	position: absolute;
 	width: 154px;
 	height: 154px;
-	background-color: #3c3c3c;
+	background-color: #2563eb;
 	bottom: -77px;
 	right: 300px;
 }
@@ -2074,7 +2115,7 @@ h6 { font-size: 16px; }
 }
 .aali_tm_news .news_list ul li .details .category a{
 	text-decoration: none;
-	color: #ea4343;
+	color: #2563eb;
 	font-weight: 700;
 	font-family: "Josefin Sans";
 }
@@ -2095,7 +2136,7 @@ h6 { font-size: 16px; }
 	        transition: all .3s ease;
 }
 .aali_tm_news .news_list ul li .details .title a:hover{
-	color: #ea4343;
+	color: #2563eb;
 }
 .aali_tm_news .news_list ul li .date{
 	font-size: 16px;
@@ -2115,7 +2156,7 @@ h6 { font-size: 16px; }
 	color: #15111e;
 	font-family: "Josefin Sans";
 	letter-spacing: -.2px;
-	border: 2px solid #ea4343;
+	border: 2px solid #2563eb;
 	border-radius: 6px;
 	font-weight: 700;
 	padding: 15px 45px 15px 46px;
@@ -2128,7 +2169,7 @@ h6 { font-size: 16px; }
 	        transition: all .3s ease;
 }
 .aali_tm_learn_more a:hover{
-	background-color: #ea4343;
+	background-color: #2563eb;
 	color: #fff;
 }
 .aali_tm_news .news_hidden_details{
@@ -2204,8 +2245,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #ba3c3c;
-	padding: 125px 0px 107px 0px;
+	background-color: #2563eb;
+	padding: 40px 0px 40px 0px;
 	position: relative;
 }
 .aali_tm_counter .counter_list{
@@ -2346,12 +2387,12 @@ h6 { font-size: 16px; }
 .aali_tm_contact .left ul li h3{
 	font-size: 30px;
 	font-weight: 700;
-	color: #ea4343;
+	color: #2563eb;
 	letter-spacing: -.2px;
 }
 .aali_tm_contact .left ul li a{
 	text-decoration: none;
-	color: #ea4343;
+	color: #2563eb;
 }
 .aali_tm_contact .right{
 	width: 50%;
@@ -2447,7 +2488,7 @@ input[type=number] {
 	position: absolute;
 	width: 115px;
 	height: 90px;
-	background-color: #3c3c3c;
+	background-color: #2563eb;
 	top: 60px;
 	left: 80px;
 }
@@ -2506,7 +2547,7 @@ input[type=number] {
 	border-radius: 100%;
 	text-align: center;
 	line-height: 48px;
-	color: #ea4343;
+	color: #2563eb;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -2515,7 +2556,7 @@ input[type=number] {
 	        transition: all .3s ease;
 }
 .aali_tm_copyright .social ul li a:hover{
-	background-color: #ea4343;
+	background-color: #2563eb;
 	color: #fff;
 }
 .aali_tm_copyright .social span{
@@ -2589,7 +2630,7 @@ input[type=number] {
 	height: 143px;
 	top: -77px;
 	right: 60px;
-	background-color: #ea4343;
+	background-color: #2563eb;
 }
 .line_anim{
 	display: inline-block;
@@ -2638,7 +2679,7 @@ input[type=number] {
   width: 6px;
   height: 6px;
   z-index: 100;
-  background-color: #ea4343;
+  background-color: #2563eb;
   -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
   transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
 }
@@ -2647,7 +2688,7 @@ input[type=number] {
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: #ea4343;
+  background-color: #2563eb;
   opacity: .3;
 }
 .cursor-outer {
@@ -2655,7 +2696,7 @@ input[type=number] {
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid #ea4343;
+  border: 2px solid #2563eb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 100;
@@ -3057,7 +3098,7 @@ body.intro .loader_line:after{
 	.aali_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
 	.aali_tm_portfolio .portfolio_list .svg{width: 30px;height: 30px;}
 	.aali_tm_portfolio .portfolio_list .details h3{font-size: 18px;}
-	.aali_tm_portfolio .portfolio_filter{text-align: left;}
+	.aali_tm_portfolio .portfolio_filter{text-align: center;}
 	.aali_tm_service .service_list .icon{display: inline-block;position: relative;top: 0px;left: 0px;width: 110px;height: 90px;}
 	.aali_tm_service{padding: 100px 0px 0px 0px;}
 	.aali_tm_service .service_list ul li .list_inner{padding: 50px 30px;}
@@ -3091,4 +3132,191 @@ body.intro .loader_line:after{
 	.aali_tm_modalbox .description_wrap{padding: 30px;}
 	.aali_tm_modalbox .news_popup_informations .details .title{font-size: 22px;}
 	.aali_tm_modalbox .service_popup_informations .main_title h3{font-size: 22px;}
+}
+
+.aali_tm_modalbox .box_inner {
+    background: #3c3c3c;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.aali_tm_modalbox .popup_details {
+    background-color: #3c3c3c;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.aali_tm_modalbox .close a {
+    border-radius: 50%;
+    padding: 5px;
+    background: #fff;
+}
+
+.aali_tm_modalbox .popup_details .main_details {
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+
+.aali_tm_modalbox .popup_details .main_details .textbox {
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+
+.aali_tm_modalbox .popup_details .main_details .textbox p {
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+
+.aali_tm_modalbox .popup_details .main_details .textbox .takeaways {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+.aali_tm_section.help#portfolio {
+  padding-top: 0 !important;
+}
+
+.aali_tm_about .center{
+	width: 100%;
+	padding: 0px 20px;
+}
+.aali_tm_about .text{
+	width: 100%;
+	float: left;
+	margin-bottom: 0;
+}
+.aali_tm_about .text p{
+	margin-bottom: 31px;
+	color: #fff;
+	max-width: 800px;
+}
+.aali_tm_about .right{
+	display: none;
+}
+
+@media (max-width: 768px) {
+    .aali_tm_portfolio .portfolio_filter ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aali_tm_portfolio .portfolio_filter ul li {
+        margin: 0 0 15px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .aali_tm_portfolio .portfolio_filter ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.language-item span {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .language-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .language-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.aali_tm_service .language-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.aali_tm_service .language-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.aali_tm_service .language-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.aali_tm_service .language-item span {
+  font-size: 14px;
+  color: #767676;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .aali_tm_service .language-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  .aali_tm_service .language-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aali_tm_service .service_list ul li .list_inner .icon {
+    display: none;
+  }
+  .aali_tm_service .service_list ul li .list_inner {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aali_tm_contact .left ul li {
+    margin-bottom: 30px;
+  }
+  .aali_tm_contact .left ul li .list_inner {
+    padding-left: 60px;
+  }
+  .aali_tm_contact .left ul li span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .aali_tm_contact .left ul li h3 {
+    word-break: break-all;
+    white-space: normal;
+  }
+  .aali_tm_contact .left ul li a {
+    word-break: break-all;
+    white-space: normal;
+  }
 }

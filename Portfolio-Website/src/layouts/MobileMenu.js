@@ -6,28 +6,21 @@ const MobileMenu = () => {
     <div className="aali_tm_mobile_menu">
       <div className="mobile_menu_inner">
         <div className="mobile_in">
-          <div className="logo">
-            <a href="#">
-              <img src="img/logo/dark.png" alt="aali image" />
-            </a>
-          </div>
           <div className="trigger">
             <div
               className={`hamburger hamburger--slider ${
                 toggle ? "is-active" : ""
               }`}
+              onClick={() => setToggle(!toggle)}
             >
-              <div className="hamburger-box" onClick={() => setToggle(!toggle)}>
+              <div className="hamburger-box">
                 <div className="hamburger-inner" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="dropdown"
-        style={{ display: `${toggle ? "block" : "none"}` }}
-      >
+      <div className={`dropdown ${toggle ? "active" : ""}`}>
         <div className="dropdown_inner">
           <ul className="anchor_nav">
             <li className="current">
@@ -36,29 +29,16 @@ const MobileMenu = () => {
               </a>
             </li>
             <li>
-              <a onClick={() => setToggle(false)} href="#about">
-                About
-              </a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a onClick={() => setToggle(false)} href="#portfolio">
-                Portfolio
-              </a>
+              <a href="#resume">Resume</a>
             </li>
             <li>
-              <a onClick={() => setToggle(false)} href="#service">
-                Service
-              </a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a onClick={() => setToggle(false)} href="#testimonial">
-                Testimonial
-              </a>
-            </li>
-            <li>
-              <a onClick={() => setToggle(false)} href="#blog">
-                Blog
-              </a>
+              <a href="#service">Skills</a>
             </li>
             <li>
               <a onClick={() => setToggle(false)} href="#contact">

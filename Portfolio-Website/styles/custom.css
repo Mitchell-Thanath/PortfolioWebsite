@@ -132,7 +132,7 @@ img.mfp-img {
 
 @media (max-width: 1040px) {
   .aali_tm_modalbox .box_inner {
-    width: 80%;
+    width: 95%;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -143,24 +143,29 @@ img.mfp-img {
     width: 100%;
     padding-right: 0;
   }
+  .aali_tm_modalbox .main_details .detailbox {
+    width: 100%;
+    margin-top: 30px;
+  }
   .aali_tm_modalbox .main_details .detailbox > ul {
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
   }
   .aali_tm_modalbox .main_details .detailbox > ul > li {
-    margin: 0;
-    width: unset;
-    padding: 0;
-    padding-right: 10px;
-    margin-top: 20px;
+    width: auto;
   }
 }
 
 @media (max-width: 768px) {
-  .aali_tm_modalbox .box_inner {
-    width: 80% !important;
+  .aali_tm_modalbox .main_details {
+    flex-direction: column;
+  }
+  
+  .aali_tm_modalbox .main_details .textbox,
+  .aali_tm_modalbox .main_details .detailbox {
+    width: 100%;
   }
 }
 
@@ -181,4 +186,248 @@ img.mfp-img {
 .aali_tm_portfolio .portfolio_list .share li {
   padding: 0;
   width: unset !important;
+}
+
+.aali_tm_portfolio .portfolio_filter ul li a.current {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aali_tm_portfolio .portfolio_filter ul li a {
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.aali_tm_portfolio .portfolio_filter ul li a:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.aali_tm_portfolio .portfolio_list .list_inner {
+  border: 4px solid #3b82f6;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.aali_tm_portfolio .portfolio_list .list_inner:hover {
+  border-color: #60a5fa;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.aali_tm_portfolio .popup_details {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.aali_tm_modalbox .box_inner {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+}
+
+.aali_tm_modalbox .popup_details {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.aali_tm_modalbox .main_details {
+  display: flex;
+  gap: 40px;
+}
+
+.aali_tm_modalbox .main_details .textbox {
+  width: 85%;
+  padding-right: 0;
+}
+
+.aali_tm_modalbox .main_details .detailbox {
+  width: 15%;
+}
+
+.aali_tm_modalbox .main_details .detailbox > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aali_tm_modalbox .main_details .detailbox > ul > li {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 1100px) {
+  .aali_tm_modalbox .main_details {
+    display: block;
+  }
+  .aali_tm_modalbox .main_details .textbox {
+    width: 100%;
+    padding-right: 0;
+  }
+  .aali_tm_modalbox .main_details .detailbox {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .aali_tm_modalbox .main_details .detailbox > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .aali_tm_modalbox .main_details .detailbox > ul > li {
+    width: auto;
+  }
+}
+
+.aali_tm_modalbox .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+.aali_tm_modalbox .close a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.aali_tm_modalbox .close a:hover {
+  transform: rotate(90deg);
+  color: #3b82f6;
+}
+
+@media (max-width: 768px) {
+  .aali_tm_modalbox .close {
+    right: 15px;
+    top: 15px;
+  }
+  
+  .aali_tm_modalbox .close a {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+.aali_tm_modalbox .top_image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.aali_tm_modalbox .top_image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.aali_tm_modalbox .top_image .main {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .aali_tm_modalbox .top_image img,
+  .aali_tm_modalbox .top_image .main {
+    max-height: 300px;
+  }
+}
+
+.aali_tm_modalbox .additional_images {
+  margin-top: 40px;
+}
+
+.aali_tm_modalbox .additional_images .list_inner {
+  margin-bottom: 20px;
+}
+
+.aali_tm_modalbox .additional_images .my_image {
+  width: 100%;
+}
+
+.aali_tm_modalbox .additional_images .my_image img,
+.aali_tm_modalbox .additional_images .my_image .main {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .aali_tm_modalbox .additional_images .my_image img,
+  .aali_tm_modalbox .additional_images .my_image .main {
+    max-height: 300px;
+  }
+}
+
+.aali_tm_modalbox .main_details .textbox p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways ul li {
+  background: rgba(59, 130, 246, 0.05);
+  border-left: 4px solid #3b82f6;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways ul li:first-child {
+  border-radius: 0 8px 0 0;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways ul li:last-child {
+  border-radius: 0 0 8px 0;
+}
+
+.aali_tm_modalbox .main_details .textbox .takeaways ul li:hover {
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .aali_tm_modalbox .main_details .textbox .takeaways ul li {
+    padding: 12px 15px;
+  }
+}
+
+.error {
+  color: #3b82f6;
 }

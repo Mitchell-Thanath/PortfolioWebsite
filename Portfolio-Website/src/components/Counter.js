@@ -2,7 +2,7 @@ import ReactCounter from "./ReactCounter";
 
 const Counter = () => {
   return (
-    <div className="aali_tm_section">
+    <div className="aali_tm_section" id="counter">
       <div className="aali_tm_counter">
         <div className="container">
           <div className="counter_list">
@@ -20,15 +20,15 @@ const Counter = () => {
                         >
                           0
                         </span> */}
-                        <ReactCounter end={5} />
-                        <label className="big">K</label>
+                        <ReactCounter end={2} />
+                        <label className="small">+</label>
                       </span>
                     </div>
                     <div className="text">
                       <h3>
-                        JavaScript
+                        Years
                         <br />
-                        Projects
+                        Work Experience
                       </h3>
                     </div>
                   </div>
@@ -39,15 +39,15 @@ const Counter = () => {
                   <div className="wrapper">
                     <div className="value">
                       <span className="abs">
-                        <ReactCounter end={90} />
+                        <ReactCounter end={100} />
                         <label className="small">+</label>
                       </span>
                     </div>
                     <div className="text">
                       <h3>
-                        Digital
+                        Organizations Using
                         <br />
-                        Products
+                        Products I've Built
                       </h3>
                     </div>
                   </div>
@@ -58,15 +58,17 @@ const Counter = () => {
                   <div className="wrapper">
                     <div className="value">
                       <span className="abs">
-                        <ReactCounter end={300} />
+                        <label className="big">$</label>
+                        <ReactCounter end={100} />
+                        <label className="big">M</label>
                         <label className="small">+</label>
                       </span>
                     </div>
                     <div className="text">
                       <h3>
-                        Happy
+                        Fund's
                         <br />
-                        Clients
+                        CRM Solution Created
                       </h3>
                     </div>
                   </div>
@@ -75,7 +77,7 @@ const Counter = () => {
             </ul>
           </div>
         </div>
-        <span className="border moving_effect" data-direction="x" />
+        {/* <span className="border moving_effect" data-direction="x" /> */}
       </div>
     </div>
   );

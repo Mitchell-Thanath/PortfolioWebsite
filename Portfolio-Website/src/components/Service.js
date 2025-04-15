@@ -29,32 +29,73 @@ const Service = ({ dark }) => {
       <div className="aali_tm_service">
         <div className="container">
           <div className="service_list">
+            <div className="aali_tm_main_title" data-text-align="left" data-color="dark">
+              <h3>My Skills</h3>
+            </div>
             <ul>
-              <li className="simple wow fadeInLeft" data-wow-duration="1s">
-                <div className="list_inner">
-                  <div
-                    className="aali_tm_main_title"
-                    data-text-align="left"
-                    data-color="dark"
-                  >
-                    <span>What I Do</span>
-                    <h3>My Services</h3>
-                    <p>
-                      We offer high quality products for competitive prices. Our
-                      main goal is customer satisfaction, which we obtain
-                      through market orientation of ongoing service and support.
-                    </p>
+              <li
+                className="wow fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.2s"
+              >
+                <div className="list_inner tilt-effect">
+                  <span className="icon">
+                    <img
+                      className="back"
+                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
+                      alt="Service"
+                    />
+                  </span>
+                  {/* https://devicon.dev/ */}
+                  <div className="title">
+                    <h3>Languages</h3>
+                  </div>
+                  <div className="text">
+                    <div className="language-grid">
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                        <span>Python</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                        <span>JavaScript</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+                        <span>Java</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                        <span>C++</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
+                        <span>C#</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+                        <span>CSS</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" />
+                        <span>SQL</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="Matlab" />
+                        <span>MATLAB</span>
+                      </div>
+                      
+                    </div>
                   </div>
                 </div>
               </li>
               <li
                 className="wow fadeInRight"
                 data-wow-duration="1s"
-                data-wow-delay="0.2s"
+                data-wow-delay="0.4s"
               >
                 <div className="list_inner tilt-effect">
                   <span className="icon">
-                    {dark ? cameraDark : camera}
                     <img
                       className="back"
                       src={`img/svg/service${dark ? "-dark" : ""}.png`}
@@ -62,330 +103,123 @@ const Service = ({ dark }) => {
                     />
                   </span>
                   <div className="title">
-                    <h3>Video Production</h3>
-                    <span className="price">
-                      Starts from <span>$49</span>
-                    </span>
+                    <h3>Frameworks</h3>
                   </div>
                   <div className="text">
-                    <p>
-                      Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
-                    </p>
-                  </div>
-                  <a
-                    className="aali_tm_full_link"
-                    href="#"
-                    onClick={() => setModal(1)}
-                  />
-                  <img
-                    className="popup_service_image"
-                    src="img/service/1.jpg"
-                    alt="aali image"
-                  />
-                </div>
-                <div className={hidden(1)}>
-                  <ModalBox close={setModal}>
-                    <div className="service_popup_informations">
-                      <div className="image">
-                        <img src="img/thumbs/4-2.jpg" alt="" />
-                        <div
-                          className="main"
-                          data-img-url="img/service/1.jpg"
-                        />
+                    <div className="language-grid">
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+                        <span>React</span>
                       </div>
-                      <div className="main_title">
-                        <h3>Video Production</h3>
-                        <span className="price">
-                          Starts from <span>$49</span>
-                        </span>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                        <span>Node.js</span>
                       </div>
-                      <div className="descriptions">
-                        <p>
-                          Aali is a leading web design agency with an
-                          award-winning design team that creates innovative,
-                          effective websites that capture your brand, improve
-                          your conversion rates, and maximize your revenue to
-                          help grow your business and achieve your goals.
-                        </p>
-                        <p>
-                          In today’s digital world, your website is the first
-                          interaction consumers have with your business.{" "}
-                          {`That's`}
-                          why almost 95 percent of a user’s first impression
-                          relates to web design. It’s also why web design
-                          services can have an immense impact on your company’s
-                          bottom line.
-                        </p>
-                        <p>
-                          That’s why more companies are not only reevaluating
-                          their website’s design but also partnering with Kura,
-                          the web design agency that’s driven more than $2.4
-                          billion in revenue for its clients. With over 50 web
-                          design awards under our belt, {`we're`} confident we
-                          can design a custom website that drives sales for your
-                          unique business.
-                        </p>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express" />
+                        <span>Express.js</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+                        <span>FastAPI</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+                        <span>Next.js</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" />
+                        <span>Flutter</span>
                       </div>
                     </div>
-                  </ModalBox>
+                  </div>
                 </div>
               </li>
-              <li className="wow fadeInLeft" data-wow-duration="1s">
+              <li
+                className="wow fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="0.6s"
+              >
                 <div className="list_inner tilt-effect">
                   <span className="icon">
-                    {dark ? webDark : web}
                     <img
                       className="back"
                       src={`img/svg/service${dark ? "-dark" : ""}.png`}
-                      alt="service"
+                      alt="Service"
                     />
                   </span>
                   <div className="title">
-                    <h3>Brand Identity</h3>
-                    <span className="price">
-                      Starts from <span>$59</span>
-                    </span>
+                    <h3>Tools</h3>
                   </div>
                   <div className="text">
-                    <p>
-                      Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
-                    </p>
-                  </div>
-                  <a
-                    className="aali_tm_full_link"
-                    href="#"
-                    onClick={() => setModal(2)}
-                  />
-                  <img
-                    className="popup_service_image"
-                    src="img/service/3.jpg"
-                    alt="aali image"
-                  />
-                </div>
-                <div className={hidden(2)}>
-                  <ModalBox close={setModal}>
-                    <div className="service_popup_informations">
-                      <div className="image">
-                        <img src="img/thumbs/4-2.jpg" alt="aali image" />
-                        <div
-                          className="main"
-                          data-img-url="img/service/3.jpg"
-                        />
+                    <div className="language-grid">
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Git" />
+                        <span>Git</span>
                       </div>
-                      <div className="main_title">
-                        <h3>Brand Identity</h3>
-                        <span className="price">
-                          Starts from <span>$59</span>
-                        </span>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                        <span>PostgreSQL</span>
                       </div>
-                      <div className="descriptions">
-                        <p>
-                          Aali is a leading web design agency with an
-                          award-winning design team that creates innovative,
-                          effective websites that capture your brand, improve
-                          your conversion rates, and maximize your revenue to
-                          help grow your business and achieve your goals.
-                        </p>
-                        <p>
-                          {`In today’s digital world, your website is the first
-                            interaction consumers have with your business.
-                            That's why almost 95 percent of a user’s first
-                            impression relates to web design. It’s also why web
-                            design services can have an immense impact on your
-                            company’s bottom line.`}
-                        </p>
-                        <p>
-                          {`That’s why more companies are not only reevaluating
-                            their website’s design but also partnering with
-                            Kura, the web design agency that’s driven more than
-                            $2.4 billion in revenue for its clients. With over
-                            50 web design awards under our belt, we're confident
-                            we can design a custom website that drives sales for
-                            your unique business.`}
-                        </p>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" />
+                        <span>Postman</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" />
+                        <span>Figma</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                        <span>MongoDB</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VSCode" />
+                        <span>VSCode</span>
                       </div>
                     </div>
-                  </ModalBox>
+                  </div>
                 </div>
               </li>
               <li
                 className="wow fadeInRight"
                 data-wow-duration="1s"
-                data-wow-delay="0.2s"
+                data-wow-delay="0.8s"
               >
                 <div className="list_inner tilt-effect">
                   <span className="icon">
-                    {dark ? penDark : pen}
                     <img
                       className="back"
                       src={`img/svg/service${dark ? "-dark" : ""}.png`}
-                      alt="service"
+                      alt="Service"
                     />
                   </span>
                   <div className="title">
-                    <h3>Creative Writing</h3>
-                    <span className="price">
-                      Starts from <span>$69</span>
-                    </span>
+                    <h3>Cloud & DevOps</h3>
                   </div>
                   <div className="text">
-                    <p>
-                      Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
-                    </p>
-                  </div>
-                  <a
-                    className="aali_tm_full_link"
-                    href="#"
-                    onClick={() => setModal(3)}
-                  />
-                  <img
-                    className="popup_service_image"
-                    src="img/service/2.jpg"
-                    alt="aali image"
-                  />
-                </div>
-                <div className={hidden(3)}>
-                  <ModalBox close={setModal}>
-                    <div className="service_popup_informations">
-                      <div className="image">
-                        <img src="img/thumbs/4-2.jpg" alt="aali image" />
-                        <div
-                          className="main"
-                          data-img-url="img/service/2.jpg"
-                        />
+                    <div className="language-grid">
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
+                        <span>AWS</span>
                       </div>
-                      <div className="main_title">
-                        <h3>Creative Writing</h3>
-                        <span className="price">
-                          Starts from <span>$69</span>
-                        </span>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" />
+                        <span>Azure</span>
                       </div>
-                      <div className="descriptions">
-                        <p>
-                          Aali is a leading web design agency with an
-                          award-winning design team that creates innovative,
-                          effective websites that capture your brand, improve
-                          your conversion rates, and maximize your revenue to
-                          help grow your business and achieve your goals.
-                        </p>
-                        <p>
-                          {`In today’s digital world, your website is the first
-                            interaction consumers have with your business.
-                            That's why almost 95 percent of a user’s first
-                            impression relates to web design. It’s also why web
-                            design services can have an immense impact on your
-                            company’s bottom line.`}
-                        </p>
-                        <p>
-                          {`That’s why more companies are not only reevaluating
-                            their website’s design but also partnering with
-                            Kura, the web design agency that’s driven more than
-                            $2.4 billion in revenue for its clients. With over
-                            50 web design awards under our belt, we're confident
-                            we can design a custom website that drives sales for
-                            your unique business.`}
-                        </p>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
+                        <span>Docker</span>
                       </div>
-                    </div>
-                  </ModalBox>
-                </div>
-              </li>
-              <li className="wow fadeInLeft" data-wow-duration="1s">
-                <div className="list_inner tilt-effect">
-                  <span className="icon">
-                    {dark ? userDark : user}
-                    <img
-                      className="back"
-                      src={`img/svg/service${dark ? "-dark" : ""}.png`}
-                      alt="service"
-                    />
-                  </span>
-                  <div className="title">
-                    <h3>Digital Marketing</h3>
-                    <span className="price">
-                      Starts from <span>$79</span>
-                    </span>
-                  </div>
-                  <div className="text">
-                    <p>
-                      Aali is a leading web design agency with an award-winning
-                      design team that creates innovative, effective websites{" "}
-                    </p>
-                  </div>
-                  <a
-                    className="aali_tm_full_link"
-                    href="#"
-                    onClick={() => setModal(4)}
-                  />
-                  <img
-                    className="popup_service_image"
-                    src="img/service/4.jpg"
-                    alt="aali image"
-                  />
-                </div>
-                <div className={hidden(4)}>
-                  <ModalBox close={setModal}>
-                    <div className="service_popup_informations">
-                      <div className="image">
-                        <img src="img/thumbs/4-2.jpg" alt="aali image" />
-                        <div
-                          className="main"
-                          data-img-url="img/service/4.jpg"
-                        />
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="Github Actions" />
+                        <span>Github Actions</span>
                       </div>
-                      <div className="main_title">
-                        <h3>Digital Marketing</h3>
-                        <span className="price">
-                          Starts from <span>$79</span>
-                        </span>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" />
+                        <span>Vercel</span>
                       </div>
-                      <div className="descriptions">
-                        <p>
-                          Aali is a leading web design agency with an
-                          award-winning design team that creates innovative,
-                          effective websites that capture your brand, improve
-                          your conversion rates, and maximize your revenue to
-                          help grow your business and achieve your goals.
-                        </p>
-                        <p>
-                          {`In today’s digital world, your website is the first
-                            interaction consumers have with your business.
-                            That's why almost 95 percent of a user’s first
-                            impression relates to web design. It’s also why web
-                            design services can have an immense impact on your
-                            company’s bottom line.`}
-                        </p>
-                        <p>
-                          {`That’s why more companies are not only reevaluating
-                            their website’s design but also partnering with
-                            Kura, the web design agency that’s driven more than
-                            $2.4 billion in revenue for its clients. With over
-                            50 web design awards under our belt, we're confident
-                            we can design a custom website that drives sales for
-                            your unique business.`}
-                        </p>
-                      </div>
-                    </div>
-                  </ModalBox>
-                </div>
-              </li>
-              <li
-                className="simple text wow fadeInRight"
-                data-wow-duration="1s"
-                data-wow-delay="0.2s"
-              >
-                <div className="list_inner">
-                  <div className="wrapper">
-                    <div className="inner_text">
-                      <h3>Do You Want Something Different?</h3>
-                    </div>
-                    <div className="aali_tm_button border">
-                      <a className="anchor" href="#contact">
-                        <span>Knock Me {msg}</span>
-                      </a>
+
                     </div>
                   </div>
                 </div>
