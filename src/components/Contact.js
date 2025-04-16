@@ -69,7 +69,7 @@ const Contact = () => {
             data-text-align="center"
             data-color="dark"
           >
-            <h3>Connect with Me with Confidence</h3>
+            <h3>Connect With Me!</h3>
           </div>
           <div className="contact_inner">
             <div className="left wow fadeInLeft" data-wow-duration="1s">
