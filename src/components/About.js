@@ -27,7 +27,7 @@ const About = () => {
             <div className="title wow fadeInUp" data-wow-duration="1s">
               <span className="small">About Me</span>
               <h3>
-                {`I'm`} <span>Mitchell</span>
+                {`I'm`} <span>Mitchell Thanath</span>
               </h3>
               {/* <h3>
                 Web <span>Designer</span>
