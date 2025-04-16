@@ -573,7 +573,7 @@ const Portfolio = () => {
                             <div className="takeaways">
                               <ul>
                                 <li>C++ development experience</li>
-                                <li>Designing efficientdata structures</li>
+                                <li>Designing efficient data structures</li>
                                 <li>Working with large datasets</li>
                                 <li>Algorithm optimization for time complexity</li>
                               </ul>
