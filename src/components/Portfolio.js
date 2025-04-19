@@ -211,81 +211,6 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
-              <li className="filter-item detail ai">
-                              <div className="list_inner">
-                  <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Facial Emotion Detection" />
-                    <div className="main" data-img-url="img/portfolio/CNN1.png" />
-                  </div>
-                  <div className="overlay" />
-                  {text}
-                  <div className="details">
-                    <span>Project</span>
-                    <h3>Neural Network Emotion Detector</h3>
-                  </div>
-                  <a
-                    className="aali_tm_full_link portfolio_popup"
-                    href="#"
-                    onClick={() => setModal("project2")}
-                  />
-                  <div className={modal === "project2" ? "" : "hidden_content"}>
-                    <ModalBox close={setModal}>
-                      <div className="popup_details">
-                        <div className="top_image">
-                          <img src="img/thumbs/4-2.jpg" alt="" />
-                                  <div
-                                    className="main"
-                            data-img-url="img/portfolio/CNN1.png"
-                          ></div>
-                                </div>
-                        <div className="portfolio_main_title">
-                          <span>Personal Project</span>
-                          <h3>Neural Network Emotion Detector</h3>
-                          <div></div>
-                        </div>
-                        <div className="main_details">
-                          <div className="textbox">
-                            <p>
-                              As part of my Applied Data Science course, I had the task of developing several deep learning models to perform Facial Emotion Detection. I created models using Neural Networks, Transfer Learning Architectures (ResNet, EfficientNet, VGG-16), and Convolutional Neural Networks. I performed created the models with the intent to maximize accuracy in classifying facial emotions. I also performed several techniques to reduce overfitting such as dropout, max pooling, and cross-validation. I tested the performance of all these models and concluded that the Convolutional Neural Network model produced the highest accuracy against the test set for our intended purpose of Facial Emotion Recognition.
-                            </p>
-                            <p>
-                              Here are some of my main takeaways from the project:
-                            </p>
-                            <div className="takeaways">
-                              <ul>
-                                <li>Python, TensorFlow, NumPy, Pandas experience</li>
-                                <li>Neural Networks, Transfer Learning Architectures, Convolutional Neural Networks</li>
-                                <li>Data Preprocessing, Statistical Analysis & Data Visualization</li>
-                                <li>Cross-validation techniques to improve model performance evaluation</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="additional_images">
-                          <ul>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Facial Emotion Detection" />
-                                  <div className="main" data-img-url="img/portfolio/CNN2.png" />
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Facial Emotion Detection" />
-                                  <div className="main" data-img-url="img/portfolio/CNN3.png" />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </ModalBox>
-                  </div>
-                </div>
-              </li>
               <li className="filter-item detail ai fullstack cloud">
                 <div className="list_inner">
                   <div className="image">
@@ -374,49 +299,58 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
-              <li className="filter-item detail oop">
+              <li className="filter-item detail fullstack">
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Minesweeper" />
-                    <div className="main" data-img-url="img/portfolio/Minesweeper1.png" />
+                    <img src="img/thumbs/1-1.jpg" alt="Job Board Web App" />
+                    <div className="main" data-img-url="img/portfolio/JobBoard1.png" />
                   </div>
                   <div className="overlay" />
                   {text}
                   <div className="details">
                     <span>Project</span>
-                    <h3>Minesweeper</h3>
+                    <h3>Job Board Web App</h3>
                   </div>
                   <a
                     className="aali_tm_full_link portfolio_popup"
                     href="#"
-                    onClick={() => setModal("project5")}
+                    onClick={() => setModal("project8")}
                   />
-                  <div className={modal === "project5" ? "" : "hidden_content"}>
+                  <div className={modal === "project8" ? "" : "hidden_content"}>
                     <ModalBox close={setModal}>
                       <div className="popup_details">
                         <div className="top_image">
                           <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div className="main" data-img-url="img/portfolio/Minesweeper1.png" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/JobBoard1.png"
+                          ></div>
                         </div>
                         <div className="portfolio_main_title">
                           <span>Personal Project</span>
-                          <h3>Minesweeper</h3>
+                          <h3>Job Board Web App</h3>
                           <div></div>
                         </div>
                         <div className="main_details">
                           <div className="textbox">
                             <p>
-                              I developed a Minesweeper game in Java, implementing object-oriented programming principles to create a modular and maintainable codebase. The game features a graphical user interface built with Java Swing, allowing players to interact with the game board through mouse clicks. I implemented core game mechanics such as mine placement, cell revealing, and win/loss conditions, while ensuring proper encapsulation and separation of concerns.
+                              Developed a full-stack web app where employers can post job 
+                              openings and students can share that they're looking for 
+                              positions. Built the frontend with React and Bootstrap for 
+                              a clean, responsive UI, and used Express.js and MongoDB to 
+                              handle data storage and API routes. Key features include user 
+                              authentication, a searchable feed, comment sections, upvote/downvote functionality, 
+                              and the ability to sort posts by popularity or recency.
                             </p>
                             <p>
                               Here are some of my key takeaways:
                             </p>
                             <div className="takeaways">
                               <ul>
-                                <li>Applied object-oriented programming principles in Java</li>
-                                <li>Developed a graphical user interface using Java Swing</li>
-                                <li>Implemented game logic and user interaction handling</li>
-                                <li>Created modular and maintainable code structure</li>
+                                <li>Experience building and connecting a React frontend to Express/MongoDB backend</li>
+                                <li>Built RESTful APIs, managed application state, and handled user interactions</li>
+                                <li>Focused on clean, user-friendly design using Figma and responsive layout techniques</li>
+                                <li>Implemented features like login, search, comments, upvotes/downvotes, and sorting</li>
                               </ul>
                             </div>
                           </div>
@@ -426,16 +360,103 @@ const Portfolio = () => {
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Minesweeper" />
-                                  <div className="main" data-img-url="img/portfolio/Minesweeper2.png" />
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Job Board Web App"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/JobBoard2.png"
+                                  />
                                 </div>
                               </div>
                             </li>
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Minesweeper" />
-                                  <div className="main" data-img-url="img/portfolio/Minesweeper3.png" />
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Job Board Web App"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/JobBoard3.png"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
+              <li className="filter-item detail ai">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="Facial Emotion Detection" />
+                    <div className="main" data-img-url="img/portfolio/CNN1.png" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>Project</span>
+                    <h3>Neural Network Emotion Detector</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project2")}
+                  />
+                  <div className={modal === "project2" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/CNN1.png"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Personal Project</span>
+                          <h3>Neural Network Emotion Detector</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              As part of my Applied Data Science course, I had the task of developing several deep learning models to perform Facial Emotion Detection. I created models using Neural Networks, Transfer Learning Architectures (ResNet, EfficientNet, VGG-16), and Convolutional Neural Networks. I performed created the models with the intent to maximize accuracy in classifying facial emotions. I also performed several techniques to reduce overfitting such as dropout, max pooling, and cross-validation. I tested the performance of all these models and concluded that the Convolutional Neural Network model produced the highest accuracy against the test set for our intended purpose of Facial Emotion Recognition.
+                            </p>
+                            <p>
+                              Here are some of my main takeaways from the project:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Python, TensorFlow, NumPy, Pandas experience</li>
+                                <li>Neural Networks, Transfer Learning Architectures, Convolutional Neural Networks</li>
+                                <li>Data Preprocessing, Statistical Analysis & Data Visualization</li>
+                                <li>Cross-validation techniques to improve model performance evaluation</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img src="img/thumbs/4-2.jpg" alt="Facial Emotion Detection" />
+                                  <div className="main" data-img-url="img/portfolio/CNN2.png" />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img src="img/thumbs/4-2.jpg" alt="Facial Emotion Detection" />
+                                  <div className="main" data-img-url="img/portfolio/CNN3.png" />
                                 </div>
                               </div>
                             </li>
@@ -508,6 +529,78 @@ const Portfolio = () => {
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
                                   <div className="main" data-img-url="img/portfolio/Soupa3.PNG" />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
+              <li className="filter-item detail oop">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="Custom Programming Language" />
+                    <div className="main" data-img-url="img/portfolio/langTest1.png" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>Project</span>
+                    <h3>Custom Programming Language</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project7")}
+                  />
+                  <div className={modal === "project7" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div className="main" data-img-url="img/portfolio/langTest1.png" />
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Personal Project</span>
+                          <h3>Custom Programming Language</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              As part of my Programming Language Concepts course, I had the task of developing a programming language from scratch in Java. I followed a set of predefined grammar rules and created the various cruical components of a programming language. To begin with, I constructed a Lexer, responsible for converting source code into a sequence of tokens. Next, I created a Parser, which parsed the token stream and transformed it into an abstract syntax tree (AST). I then made an Interpreter to execute the program by traversing the AST, evaluating statements, and producing results in accordance with the language's semantics. I then constructed an Analyzer which ensured type safety, detected potential errors, and validated the correctness of the program. Finally, I created the Generator which generated the final code by mapping it to Java. From the completion of this project and implementing the Lexer, Parser, Interpreter, Analyzer, and Generator, I gained a comprehensive understanding of the inner workings of programming languages and their various components. I also gained valuble experience using some of Java's newer features and using JUnit5 to conduct testing.
+                            </p>
+                            <p>
+                              Here are some of my main takeaways from the project:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Java experience</li>
+                                <li>Use of JUnit5 for testing</li>
+                                <li>Creating an Abstract Syntax Tree</li>
+                                <li>Valuable debugging experience</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img src="img/thumbs/4-2.jpg" alt="Custom Programming Language" />
+                                  <div className="main" data-img-url="img/portfolio/langTest2.png" />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img src="img/thumbs/4-2.jpg" alt="Custom Programming Language" />
+                                  <div className="main" data-img-url="img/portfolio/langTest3.png" />
                                 </div>
                               </div>
                             </li>
@@ -616,121 +709,46 @@ const Portfolio = () => {
               <li className="filter-item detail oop">
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Custom Programming Language" />
-                    <div className="main" data-img-url="img/portfolio/langTest1.png" />
+                    <img src="img/thumbs/1-1.jpg" alt="Minesweeper" />
+                    <div className="main" data-img-url="img/portfolio/Minesweeper1.png" />
                   </div>
                   <div className="overlay" />
                   {text}
                   <div className="details">
                     <span>Project</span>
-                    <h3>Custom Programming Language</h3>
+                    <h3>Minesweeper</h3>
                   </div>
                   <a
                     className="aali_tm_full_link portfolio_popup"
                     href="#"
-                    onClick={() => setModal("project7")}
+                    onClick={() => setModal("project5")}
                   />
-                  <div className={modal === "project7" ? "" : "hidden_content"}>
+                  <div className={modal === "project5" ? "" : "hidden_content"}>
                     <ModalBox close={setModal}>
                       <div className="popup_details">
                         <div className="top_image">
                           <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div className="main" data-img-url="img/portfolio/langTest1.png" />
+                          <div className="main" data-img-url="img/portfolio/Minesweeper1.png" />
                         </div>
                         <div className="portfolio_main_title">
                           <span>Personal Project</span>
-                          <h3>Custom Programming Language</h3>
+                          <h3>Minesweeper</h3>
                           <div></div>
                         </div>
                         <div className="main_details">
                           <div className="textbox">
                             <p>
-                              As part of my Programming Language Concepts course, I had the task of developing a programming language from scratch in Java. I followed a set of predefined grammar rules and created the various cruical components of a programming language. To begin with, I constructed a Lexer, responsible for converting source code into a sequence of tokens. Next, I created a Parser, which parsed the token stream and transformed it into an abstract syntax tree (AST). I then made an Interpreter to execute the program by traversing the AST, evaluating statements, and producing results in accordance with the language's semantics. I then constructed an Analyzer which ensured type safety, detected potential errors, and validated the correctness of the program. Finally, I created the Generator which generated the final code by mapping it to Java. From the completion of this project and implementing the Lexer, Parser, Interpreter, Analyzer, and Generator, I gained a comprehensive understanding of the inner workings of programming languages and their various components. I also gained valuble experience using some of Java's newer features and using JUnit5 to conduct testing.
-                            </p>
-                            <p>
-                              Here are some of my main takeaways from the project:
-                            </p>
-                            <div className="takeaways">
-                              <ul>
-                                <li>Java experience</li>
-                                <li>Use of JUnit5 for testing</li>
-                                <li>Creating an Abstract Syntax Tree</li>
-                                <li>Valuable debugging experience</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="additional_images">
-                          <ul>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Custom Programming Language" />
-                                  <div className="main" data-img-url="img/portfolio/langTest2.png" />
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Custom Programming Language" />
-                                  <div className="main" data-img-url="img/portfolio/langTest3.png" />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </ModalBox>
-                  </div>
-                </div>
-              </li>
-              <li className="filter-item detail fullstack">
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Job Board" />
-                    <div className="main" data-img-url="img/portfolio/JobBoard1.png" />
-                  </div>
-                  <div className="overlay" />
-                  {text}
-                  <div className="details">
-                    <span>Project</span>
-                    <h3>Job Board Website</h3>
-                  </div>
-                  <a
-                    className="aali_tm_full_link portfolio_popup"
-                    href="#"
-                    onClick={() => setModal("project8")}
-                  />
-                  <div className={modal === "project8" ? "" : "hidden_content"}>
-                    <ModalBox close={setModal}>
-                      <div className="popup_details">
-                        <div className="top_image">
-                          <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div
-                            className="main"
-                            data-img-url="img/portfolio/JobBoard1.png"
-                          ></div>
-                        </div>
-                        <div className="portfolio_main_title">
-                          <span>Personal Project</span>
-                          <h3>Job Board Website</h3>
-                          <div></div>
-                        </div>
-                        <div className="main_details">
-                          <div className="textbox">
-                            <p>
-                              As part of a team project, we built a job board website where employers could post job opportunities and students could share that they were seeking positions. All posts were stored in a MongoDB database and displayed on the site's feed. We added features like a search bar, comment section, upvote/downvote functionality, and sorting by upvotes or recency. We designed the site using Figma, built the frontend with React, and used Bootstrap for styling components.
+                              I developed a Minesweeper game in Java, implementing object-oriented programming principles to create a modular and maintainable codebase. The game features a graphical user interface built with Java Swing, allowing players to interact with the game board through mouse clicks. I implemented core game mechanics such as mine placement, cell revealing, and win/loss conditions, while ensuring proper encapsulation and separation of concerns.
                             </p>
                             <p>
                               Here are some of my key takeaways:
                             </p>
                             <div className="takeaways">
                               <ul>
-                                <li>Full-stack development experience</li>
-                                <li>Experience with React and MongoDB</li>
-                                <li>Used Bootstrap for component styling</li>
-                                <li>Designed and prototyped with Figma</li>
+                                <li>Applied object-oriented programming principles in Java</li>
+                                <li>Developed a graphical user interface using Java Swing</li>
+                                <li>Implemented game logic and user interaction handling</li>
+                                <li>Created modular and maintainable code structure</li>
                               </ul>
                             </div>
                           </div>
@@ -740,28 +758,16 @@ const Portfolio = () => {
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="Job Board"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/JobBoard2.png"
-                                  />
+                                  <img src="img/thumbs/4-2.jpg" alt="Minesweeper" />
+                                  <div className="main" data-img-url="img/portfolio/Minesweeper2.png" />
                                 </div>
                               </div>
                             </li>
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="Job Board"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/JobBoard3.png"
-                                  />
+                                  <img src="img/thumbs/4-2.jpg" alt="Minesweeper" />
+                                  <div className="main" data-img-url="img/portfolio/Minesweeper3.png" />
                                 </div>
                               </div>
                             </li>
@@ -807,17 +813,25 @@ const Portfolio = () => {
                         <div className="main_details">
                           <div className="textbox">
                             <p>
-                              As a personal project, I developed a portfolio website using React.js to showcase my software projects, technical skills, and experiences. The site features a clean, responsive design with smooth navigation and interactive elements. Each project is presented with a short description and key technologies used. I also included sections for my resume, contact information, and an about me page to give visitors a full picture of my background. I hosted the site using GitHub Pages and purchased a custom domain name to give it a more professional look.
+                              As a personal project, I developed a portfolio website using React.js and Next.js 
+                              to showcase my software projects, technical skills, and experiences. The site 
+                              features a clean, responsive design with smooth navigation and interactive elements, 
+                              built with modern web technologies. Each project is presented with a short 
+                              description and key technologies used, with a modal system for detailed project
+                              information. I also included sections for my resume, contact information, and 
+                              an about me page to give visitors a full picture of my background. The site is 
+                              hosted using GitHub Pages and is using a custom domain name.
                             </p>
                             <p>
                               Here are some of my key takeaways:
                             </p>
                             <div className="takeaways">
                               <ul>
-                                <li>Frontend development with React.js</li>
-                                <li>Styled components using CSS for a polished, responsive UI</li>
-                                <li>Gained experience in deploying websites using GitHub Pages</li>
-                                <li>Set up and configured a custom domain for a professional web presence</li>
+                                <li>Frontend development with React.js and Next.js</li>
+                                <li>Styled components using CSS</li>
+                                <li>Implemented interactive modals and animations for enhanced user experience</li>
+                                <li>Deployed website using GitHub Pages</li>
+                                <li>Set up and configured a custom domain</li>
                               </ul>
                             </div>
                           </div>
