@@ -222,6 +222,60 @@ img.mfp-img {
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
 }
 
+/* Adjust spacing between icon and project title */
+.aali_tm_portfolio .portfolio_list .svg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.aali_tm_portfolio .portfolio_list .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0px 20px 45px 20px;
+  text-align: center;
+}
+
+.aali_tm_portfolio .portfolio_list .details span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.aali_tm_portfolio .portfolio_list .details h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 1440px) {
+  .aali_tm_portfolio .portfolio_list .svg {
+    top: 35%;
+  }
+  
+  .aali_tm_portfolio .portfolio_list .details {
+    padding: 0px 20px 35px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aali_tm_portfolio .portfolio_list .svg {
+    top: 40%;
+  }
+  
+  .aali_tm_portfolio .portfolio_list .details {
+    padding: 0px 20px 25px 20px;
+  }
+}
+
 .aali_tm_portfolio .popup_details {
   background-color: #fff;
   padding: 40px;

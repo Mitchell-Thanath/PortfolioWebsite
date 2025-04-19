@@ -120,6 +120,10 @@ const Service = ({ dark }) => {
                         <span>Express.js</span>
                       </div>
                       <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask" />
+                        <span>Flask</span>
+                      </div>
+                      <div className="language-item">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
                         <span>FastAPI</span>
                       </div>
@@ -128,8 +132,8 @@ const Service = ({ dark }) => {
                         <span>Next.js</span>
                       </div>
                       <div className="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" />
-                        <span>Flutter</span>
+                        <img src="img/service/FlutterFlow.png" alt="FlutterFlow" />
+                        <span>FlutterFlow</span>
                       </div>
                     </div>
                   </div>
