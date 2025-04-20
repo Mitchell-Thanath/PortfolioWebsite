@@ -489,7 +489,10 @@ const Portfolio = () => {
                       <div className="popup_details">
                         <div className="top_image">
                           <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div className="main" data-img-url="img/portfolio/Soupa1.PNG" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/Soupa1.png"
+                          ></div>
                         </div>
                         <div className="portfolio_main_title">
                           <span>Freelance Project</span>
@@ -520,7 +523,10 @@ const Portfolio = () => {
                               <div className="list_inner">
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
-                                  <div className="main" data-img-url="img/portfolio/Soupa2.PNG" />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/Soupa2.png"
+                                  />
                                 </div>
                               </div>
                             </li>
@@ -528,7 +534,10 @@ const Portfolio = () => {
                               <div className="list_inner">
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
-                                  <div className="main" data-img-url="img/portfolio/Soupa3.PNG" />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/Soupa3.png"
+                                  />
                                 </div>
                               </div>
                             </li>
