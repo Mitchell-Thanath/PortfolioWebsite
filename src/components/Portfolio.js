@@ -159,7 +159,6 @@ const Portfolio = () => {
                               <ul>
                                 <li>Led full-stack development using React and Express.js</li>
                                 <li>Integrated OpenAI's API for AI-driven recommendations</li>
-                                <li>Used PostgreSQL (hosted on AWS) for structured data collection and storage</li>
                                 <li>Deployed the frontend with Vercel and backend services using AWS EC2 and S3</li>
                                 <li>Containerized backend services using Docker for consistency and scalability</li>
                               </ul>
