@@ -118,6 +118,94 @@ const Portfolio = () => {
               <li className="filter-item detail ai fullstack cloud">
                 <div className="list_inner">
                   <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="AI Recommendation System" />
+                    <div className="main" data-img-url="img/portfolio/Stealth1.jpg" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>CTO of Stealth Startup</span>
+                    <h3>Full-Stack AI POS Kiosk</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project3")}
+                  />
+                  <div className={modal === "project3" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/Stealth1.jpg"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Startup Company</span>
+                          <h3>Full-Stack AI POS Kiosk</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              I'm currently working as the CTO of a stealth startup providing AI-enhanced Point-Of-Sale kiosk systems in the F&B industry. I led development and architecture of a full-stack web application including a React front-end, Node.js backend, database, and an AI-based recommendation engine using ChatGPT API and LangChain. I containerized the backend using Docker, deployed it using AWS EC2, utilized S3 buckets for storage, and used ELB for managing traffic to multiple instances. I also leveraged Vercel and env variables to configure and deploy multiple subdomain-specific front-ends, and integrated Stripe API for payment processing and collection of transaction data for detailed analytics.
+                            </p>
+                            <p>
+                              Here are some of my key takeaways:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Led full-stack development using React and Express.js</li>
+                                <li>Integrated OpenAI's API for AI-driven recommendations</li>
+                                <li>Used PostgreSQL (hosted on AWS) for structured data collection and storage</li>
+                                <li>Deployed the frontend with Vercel and backend services using AWS EC2 and S3</li>
+                                <li>Containerized backend services using Docker for consistency and scalability</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="AI Recommendation System"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/Stealth2.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="AI Recommendation System"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/Stealth3.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
+              <li className="filter-item detail ai fullstack cloud">
+                <div className="list_inner">
+                  <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
                     <div className="main" data-img-url="img/portfolio/TechNews1.png" />
                   </div>
@@ -200,94 +288,6 @@ const Portfolio = () => {
                                   <div
                                     className="main"
                                     data-img-url="img/portfolio/TechNews3.png"
-                                  />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </ModalBox>
-                  </div>
-                </div>
-              </li>
-              <li className="filter-item detail ai fullstack cloud">
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="AI Recommendation System" />
-                    <div className="main" data-img-url="img/portfolio/Stealth1.jpg" />
-                  </div>
-                  <div className="overlay" />
-                  {text}
-                  <div className="details">
-                    <span>CTO of Stealth Startup</span>
-                    <h3>AI Recommendation System</h3>
-                  </div>
-                  <a
-                    className="aali_tm_full_link portfolio_popup"
-                    href="#"
-                    onClick={() => setModal("project3")}
-                  />
-                  <div className={modal === "project3" ? "" : "hidden_content"}>
-                    <ModalBox close={setModal}>
-                      <div className="popup_details">
-                        <div className="top_image">
-                          <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div
-                            className="main"
-                            data-img-url="img/portfolio/Stealth1.jpg"
-                          ></div>
-                        </div>
-                        <div className="portfolio_main_title">
-                          <span>Startup Company</span>
-                          <h3>AI Recommendation System</h3>
-                          <div></div>
-                        </div>
-                        <div className="main_details">
-                          <div className="textbox">
-                            <p>
-                              I'm currently working as the CTO of a stealth startup focused on building an AI-powered recommendation platform. While the details of the project remain confidential, the core product leverages machine learning to deliver intelligent, personalized recommendations. The platform integrates OpenAI's API for AI-driven recommendations and is built on AWS infrastructure for robust cloud deployment.
-                            </p>
-                            <p>
-                              Here are some of my key takeaways:
-                            </p>
-                            <div className="takeaways">
-                              <ul>
-                                <li>Led full-stack development using React and Express.js</li>
-                                <li>Integrated OpenAI's API for AI-driven recommendations</li>
-                                <li>Used PostgreSQL (hosted on AWS) for structured data collection and storage</li>
-                                <li>Deployed the frontend with Vercel and backend services using AWS EC2 and S3</li>
-                                <li>Containerized backend services using Docker for consistency and scalability</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="additional_images">
-                          <ul>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="AI Recommendation System"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/Stealth2.jpg"
-                                  />
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="AI Recommendation System"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/Stealth3.jpg"
                                   />
                                 </div>
                               </div>
