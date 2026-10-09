@@ -42,7 +42,7 @@ const About = () => {
               <p>
               I'm a Full-Stack Developer with a strong passion for continuous 
               learning and building impactful applications. 
-              With over 2 years of work experience, I’ve developed everything
+              With 3 years of work experience, I’ve developed everything
               from responsive frontends, to robust backend
               systems that serve real user needs.
               I thrive on challenging projects that require creative problem-solving

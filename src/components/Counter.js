@@ -20,7 +20,7 @@ const Counter = () => {
                         >
                           0
                         </span> */}
-                        <ReactCounter end={2} />
+                        <ReactCounter end={3} />
                         <label className="small">+</label>
                       </span>
                     </div>
