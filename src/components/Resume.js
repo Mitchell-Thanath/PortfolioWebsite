@@ -81,16 +81,25 @@ const Resume = () => {
                           <span className="icon">{exp}</span>
                           <div className="info">
                             <div className="left">
-                              <h3>Full Stack Developer</h3>
+                              <h3>Software Engineer 2</h3>
                               <span>Abacus Global Management</span>
                             </div>
                             <div className="right">
-                              <span>2023 - Present</span>
+                              <span>Sep 2023 - Present</span>
                             </div>
                           </div>
                           <div className="text">
                             <p>
-                              Developing and maintaining full-stack applications in a fast-paced startup environment
+                              • Full-stack engineer across frontend, backend, databases and cloud infrastructure.
+                            </p>
+                            <p>
+                              • Took internal tools from early prototypes to production applications used across the company.
+                            </p>
+                            <p>
+                              • Built data pipelines and machine learning models that run in production.
+                            </p>
+                            <p>
+                              • Built and maintain the frontend of a customer-facing SaaS product.
                             </p>
                           </div>
                         </div>
