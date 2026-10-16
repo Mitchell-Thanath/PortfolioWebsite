@@ -1,6 +1,8 @@
-import emailjs from "emailjs-com";
 import { useState } from "react";
 import { emailIcon, linkedin, msgSent } from "../svgImage";
+
+// FormSubmit alias for mitchellthanath@gmail.com (activated 2026-10-15)
+const FORMSUBMIT_URL = "https://formsubmit.co/ajax/405229d16b9c504e2bb071166e602908";
 
 const Contact = () => {
   const [mailData, setMailData] = useState({
@@ -34,17 +36,21 @@ const Contact = () => {
     }
 
     try {
-      const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        mailData,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      );
+      const response = await fetch(FORMSUBMIT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          ...mailData,
+          _subject: "mitchellthanath.com contact form",
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+      const result = await response.json();
 
-      if (response.status === 200) {
-        setError(false);
-        setMailData({ name: "", email: "", message: "" });
-      }
+      if (result.success !== "true") throw new Error(result.message);
+      setError(false);
+      setMailData({ name: "", email: "", message: "" });
     } catch (err) {
       console.error("Failed to send email:", err);
       setError("Failed to send message. Please try again later.");
