@@ -259,7 +259,7 @@ const Portfolio = () => {
                                 <div className="my_image">
                                   <img
                                     src="img/thumbs/4-2.jpg"
-                                    alt="MatchUp home screen"
+                                    alt="MatchUp matchmaking, picks and victory screens"
                                   />
                                   <div
                                     className="main"
@@ -273,7 +273,7 @@ const Portfolio = () => {
                                 <div className="my_image">
                                   <img
                                     src="img/thumbs/4-2.jpg"
-                                    alt="MatchUp prediction card"
+                                    alt="MatchUp welcome, matches and tiebreaker screens"
                                   />
                                   <div
                                     className="main"
