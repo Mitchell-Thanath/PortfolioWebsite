@@ -223,6 +223,14 @@ const Service = ({ dark }) => {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" />
                         <span>Vercel</span>
                       </div>
+                      <div className="language-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" />
+                        <span>Cloudflare</span>
+                      </div>
+                      <div className="language-item">
+                        <img src="https://cdn.simpleicons.org/tailscale" alt="Tailscale" />
+                        <span>Tailscale</span>
+                      </div>
 
                     </div>
                   </div>

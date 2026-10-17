@@ -49,11 +49,10 @@ const About = () => {
               and push me to expand my technical capabilities.
               </p>
               <p>
-              I build with agentic workflows. I design and run a system of dozens
-              of AI agents, each with its own role, tools and checks on its work,
-              that plan, write, test and ship code in parallel. My focus is making
-              that system reliable, so it delivers scalable production software,
-              not just prototypes.
+              I build with agentic workflows. I design and manage dozens of AI
+              agents that plan, write, test and ship code in parallel, with
+              built-in checks that keep the software they produce scalable
+              and reliable.
               </p>
             </div>
             <div
