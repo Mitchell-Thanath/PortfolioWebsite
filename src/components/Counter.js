@@ -58,17 +58,15 @@ const Counter = () => {
                   <div className="wrapper">
                     <div className="value">
                       <span className="abs">
-                        <label className="big">$</label>
-                        <ReactCounter end={100} />
-                        <label className="big">M</label>
+                        <ReactCounter end={9} />
                         <label className="small">+</label>
                       </span>
                     </div>
                     <div className="text">
                       <h3>
-                        Fund's
+                        Projects
                         <br />
-                        CRM Solution Created
+                        Built
                       </h3>
                     </div>
                   </div>
