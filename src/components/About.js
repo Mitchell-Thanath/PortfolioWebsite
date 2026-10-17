@@ -49,11 +49,11 @@ const About = () => {
               and push me to expand my technical capabilities.
               </p>
               <p>
-              I am also deeply interested in the evolving capabilities of AI and 
-              eager to apply my growing expertise to create innovative solutions 
-              and drive real-world impact. As the field rapidly advances, I am 
-              committed to staying at the forefront by learning and experimenting 
-              with emerging technologies to push boundaries and explore new possibilities.
+              I build with agentic workflows. I design and run a system of dozens
+              of AI agents, each with its own role, tools and checks on its work,
+              that plan, write, test and ship code in parallel. My focus is making
+              that system reliable, so it delivers scalable production software,
+              not just prototypes.
               </p>
             </div>
             <div
