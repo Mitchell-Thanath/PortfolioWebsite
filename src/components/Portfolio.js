@@ -115,6 +115,93 @@ const Portfolio = () => {
           </div>
           <div className="portfolio_list">
             <ul className="gallery_zoom">
+              <li className="filter-item detail fullstack cloud freelance">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="Batter Up Field Sales App" />
+                    <div className="main" data-img-url="img/portfolio/BatterUp1.jpg" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>Batter Up · Freelance Project</span>
+                    <h3>Field Sales Tracking App</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project11")}
+                  />
+                  <div className={modal === "project11" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/BatterUp1.jpg"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Batter Up · Freelance Project</span>
+                          <h3>Field Sales Tracking App</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              Batter Up is a freelance project: a mobile app for a food distributor's field sales team that turns prospecting into a baseball game. Every prospect moves around the bases, from the first visit to the first order, and each rep gets a quarterly batting average that their manager and VP can see live. I built the whole thing: a React Native app in Expo with TypeScript, a Supabase backend with Postgres, user accounts, edge functions and nightly scoring jobs, maps with Google Places for nearby leads, push notifications, and a Next.js admin console. It's live on the App Store and in use by the sales team.
+                            </p>
+                            <p>
+                              Here are some of my key takeaways:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Built a cross-platform React Native app and shipped it to the App Store</li>
+                                <li>Designed a multi-company Postgres schema with row-level security on every table</li>
+                                <li>Moved scoring into the database so reps can't fake their numbers from the phone</li>
+                                <li>Built maps, nearby-lead search and push notifications with Supabase edge functions</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Batter Up rep dashboard, lineup and prospect screens"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/BatterUp2.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Batter Up manager dashboard, team map and executive overview"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/BatterUp3.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
               <li className="filter-item detail ai fullstack cloud">
                 <div className="list_inner">
                   <div className="image">
@@ -278,93 +365,6 @@ const Portfolio = () => {
                                   <div
                                     className="main"
                                     data-img-url="img/portfolio/MatchUp3.jpg"
-                                  />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </ModalBox>
-                  </div>
-                </div>
-              </li>
-              <li className="filter-item detail fullstack cloud freelance">
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Batter Up Field Sales App" />
-                    <div className="main" data-img-url="img/portfolio/BatterUp1.jpg" />
-                  </div>
-                  <div className="overlay" />
-                  {text}
-                  <div className="details">
-                    <span>Batter Up · Freelance Project</span>
-                    <h3>Field Sales Tracking App</h3>
-                  </div>
-                  <a
-                    className="aali_tm_full_link portfolio_popup"
-                    href="#"
-                    onClick={() => setModal("project11")}
-                  />
-                  <div className={modal === "project11" ? "" : "hidden_content"}>
-                    <ModalBox close={setModal}>
-                      <div className="popup_details">
-                        <div className="top_image">
-                          <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div
-                            className="main"
-                            data-img-url="img/portfolio/BatterUp1.jpg"
-                          ></div>
-                        </div>
-                        <div className="portfolio_main_title">
-                          <span>Batter Up · Freelance Project</span>
-                          <h3>Field Sales Tracking App</h3>
-                          <div></div>
-                        </div>
-                        <div className="main_details">
-                          <div className="textbox">
-                            <p>
-                              Batter Up is a freelance project: a mobile app for a food distributor's field sales team that turns prospecting into a baseball game. Every prospect moves around the bases, from the first visit to the first order, and each rep gets a quarterly batting average that their manager and VP can see live. I built the whole thing: a React Native app in Expo with TypeScript, a Supabase backend with Postgres, user accounts, edge functions and nightly scoring jobs, maps with Google Places for nearby leads, push notifications, and a Next.js admin console. It's live on the App Store and in use by the sales team.
-                            </p>
-                            <p>
-                              Here are some of my key takeaways:
-                            </p>
-                            <div className="takeaways">
-                              <ul>
-                                <li>Built a cross-platform React Native app and shipped it to the App Store</li>
-                                <li>Designed a multi-company Postgres schema with row-level security on every table</li>
-                                <li>Moved scoring into the database so reps can't fake their numbers from the phone</li>
-                                <li>Built maps, nearby-lead search and push notifications with Supabase edge functions</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="additional_images">
-                          <ul>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="Batter Up rep dashboard, lineup and prospect screens"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/BatterUp2.jpg"
-                                  />
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img
-                                    src="img/thumbs/4-2.jpg"
-                                    alt="Batter Up manager dashboard, team map and executive overview"
-                                  />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/BatterUp3.jpg"
                                   />
                                 </div>
                               </div>
