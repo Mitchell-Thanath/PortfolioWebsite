@@ -202,6 +202,93 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
+              <li className="filter-item detail fullstack cloud">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="MatchUp Sports Prediction App" />
+                    <div className="main" data-img-url="img/portfolio/MatchUp1.jpg" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>MatchUp</span>
+                    <h3>Head-to-Head Sports Prediction App</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project10")}
+                  />
+                  <div className={modal === "project10" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/MatchUp1.jpg"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>MatchUp</span>
+                          <h3>Head-to-Head Sports Prediction App</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              MatchUp is an iPhone app where two sports fans go head-to-head on the same real game. Each player answers a short card of questions, like who wins and whether a player goes over or under a stat line, and whoever gets more right wins the match. I built it with two friends: a React Native app in Expo, a Supabase database, a real-time match server built on Colyseus and Node.js running on AWS EC2, and Stripe for payments. About 40 people tested it through TestFlight.
+                            </p>
+                            <p>
+                              Here are some of my key takeaways:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Built a cross-platform mobile app with React Native and Expo</li>
+                                <li>Built real-time matchmaking with a Colyseus game server on AWS EC2</li>
+                                <li>Used Supabase for the database, user accounts and edge functions</li>
+                                <li>Integrated Stripe payments and shipped test builds through TestFlight</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="MatchUp home screen"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/MatchUp2.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="MatchUp prediction card"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/MatchUp3.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
               <li className="filter-item detail ai fullstack cloud">
                 <div className="list_inner">
                   <div className="image">

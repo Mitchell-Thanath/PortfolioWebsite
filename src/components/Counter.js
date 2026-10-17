@@ -58,15 +58,15 @@ const Counter = () => {
                   <div className="wrapper">
                     <div className="value">
                       <span className="abs">
-                        <ReactCounter end={9} />
+                        <ReactCounter end={10} />
                         <label className="small">+</label>
                       </span>
                     </div>
                     <div className="text">
                       <h3>
-                        Projects
+                        Personal
                         <br />
-                        Built
+                        Projects
                       </h3>
                     </div>
                   </div>
