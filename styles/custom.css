@@ -485,3 +485,17 @@ img.mfp-img {
 .error {
   color: #3b82f6;
 }
+
+.aali_tm_modalbox .project_video {
+  width: 100%;
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+
+.aali_tm_modalbox .project_video video {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #000;
+}

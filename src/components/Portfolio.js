@@ -202,6 +202,103 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
+              <li className="filter-item detail fullstack cloud freelance">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="Convention Photo Booth Web App" />
+                    <div className="main" data-img-url="img/portfolio/PhotoBooth1.jpg" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>Photo Booth · Freelance Project</span>
+                    <h3>Convention Photo Booth Web App</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project12")}
+                  />
+                  <div className={modal === "project12" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/4-2.jpg" alt="" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/PhotoBooth1.jpg"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Photo Booth · Freelance Project</span>
+                          <h3>Convention Photo Booth Web App</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                              Photo Booth is a freelance project: a web app for a convention's photo contest. Attendees scanned a QR code, entered their registration number and name, and uploaded a booth photo from their phone. Staff approved each photo from a moderation queue, approved photos appeared on the big screen in real time, and at the banquet the app drew two prize winners live on screen. I built it with React, TypeScript and Tailwind on Vite, a Supabase backend (Postgres, file storage, sign-in and realtime updates) and hosting on Vercel. It ran on the big screen at the convention and was built to handle about 1,000 uploads.
+                            </p>
+                            <p>
+                              Here are some of my key takeaways:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Pushed approved photos to the big screen in real time with Supabase Realtime</li>
+                                <li>Compressed photos in the browser and uploaded them straight to storage, with retries for busy convention Wi-Fi</li>
+                                <li>Locked the data down with row-level security, so the public can only submit photos and see approved ones</li>
+                                <li>Checked registration numbers against the attendee list to block duplicate entries, and picked winners with a cryptographically fair draw</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="project_video">
+                          <video
+                            src="img/portfolio/PhotoBooth.mp4"
+                            poster="img/portfolio/PhotoBoothPoster.jpg"
+                            controls
+                            muted
+                            playsInline
+                            preload="none"
+                          />
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Photo Booth banquet prize draw on the big screen"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/PhotoBooth2.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/4-2.jpg"
+                                    alt="Photo Booth upload form, confirmation and moderation screens"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/PhotoBooth3.jpg"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
               <li className="filter-item detail ai fullstack cloud">
                 <div className="list_inner">
                   <div className="image">
