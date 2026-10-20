@@ -473,61 +473,52 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
-              <li className="filter-item detail ai fullstack cloud">
+              <li className="filter-item detail fullstack freelance">
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
-                    <div className="main" data-img-url="img/portfolio/TechNews1.png" />
+                    <img src="img/thumbs/1-1.jpg" alt="Static Restaurant Website" />
+                    <div className="main" data-img-url="img/portfolio/Soupa1.png" />
                   </div>
                   <div className="overlay" />
                   {text}
                   <div className="details">
-                    <span>Project</span>
-                    <h3>Full-Stack LLM News Summarizer</h3>
+                    <span>Freelance Project</span>
+                    <h3>Restaurant Ecommerce Website</h3>
                   </div>
                   <a
                     className="aali_tm_full_link portfolio_popup"
                     href="#"
-                    onClick={() => setModal("project1")}
+                    onClick={() => setModal("project6")}
                   />
-                  <div className={modal === "project1" ? "" : "hidden_content"}>
+                  <div className={modal === "project6" ? "" : "hidden_content"}>
                     <ModalBox close={setModal}>
                       <div className="popup_details">
                         <div className="top_image">
-                          <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
+                          <img src="img/thumbs/4-2.jpg" alt="" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/TechNews1.png"
+                            data-img-url="img/portfolio/Soupa1.png"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
-                          <span>Personal Project</span>
-                          <h3>Full-Stack LLM News Summarizer</h3>
+                          <span>Freelance Project</span>
+                          <h3>Restaurant Ecommerce Website</h3>
                           <div></div>
                         </div>
                         <div className="main_details">
                           <div className="textbox">
                             <p>
-                            To stay up to date with relevant tech news, I developed a fully automated Tech News Summarizer website 
-                            that handles daily headline scraping and article summarization. Using Python, I built a web scraper to
-                             extract news headlines, and the scraped data was stored in a PostgreSQL database hosted on Azure. The back-end was
-                              developed using Node.js and Express.js, and deployed on Azure App Service to efficiently manage and serve the article data. On the 
-                              front-end, I implemented a React-based interface, which displays the archive of articles along with
-                               view count analytics. I also integrated open-source models, including the BART LLM for article 
-                               summarization and FinBERT LLM for sentiment analysis, providing users with concise summaries and 
-                               sentiment scores for each article. The project allowed me to work with full-stack technologies, 
-                               focus on data automation, and enhance user experience with AI-powered insights. 
+                              As a freelance project, I built an e-commerce website for a local restaurant to help them establish an online presence and sell branded merchandise. I designed a clean, user-friendly interface and configured key website settings, including setting up their domain and hosting the site through Bluehost. I also integrated and customized an e-commerce section to manage products and online orders. Throughout the project, I worked closely with a non-technical business owner to understand their needs and deliver a solution tailored to their goals.
                             </p>
                             <p>
-                              Here are some of my main takeaways from the project:
+                              Here are some of my key takeaways:
                             </p>
                             <div className="takeaways">
                               <ul>
-                                <li>Python, Node.js, PostgreSQL, React experience</li>
-                                <li>Web scraping, data storage, and API development</li>
-                                <li>Implementing machine learning models (BART, FinBERT) for summarization and sentiment analysis</li>
-                                <li>Full-stack development: front-end, back-end, and database integration</li>
-                                <li>Azure cloud platform experience: deploying backend services and managing PostgreSQL databases</li>
+                                <li>Configured hosting and domain management using Bluehost</li>
+                                <li>Designed and launched a functional, user-friendly website</li>
+                                <li>Set up and customized an e-commerce storefront for merchandise sales</li>
+                                <li>Collaborated effectively with a non-technical client to translate business needs into technical solutions</li>
                               </ul>
                             </div>
                           </div>
@@ -537,13 +528,10 @@ const Portfolio = () => {
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img
-                                    src="img/thumbs/1-1.jpg"
-                                    alt="Tech News Scraper"
-                                  />
+                                  <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/TechNews2.png"
+                                    data-img-url="img/portfolio/Soupa2.png"
                                   />
                                 </div>
                               </div>
@@ -551,13 +539,10 @@ const Portfolio = () => {
                             <li>
                               <div className="list_inner">
                                 <div className="my_image">
-                                  <img
-                                    src="img/thumbs/1-1.jpg"
-                                    alt="Tech News Scraper"
-                                  />
+                                  <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/TechNews3.png"
+                                    data-img-url="img/portfolio/Soupa3.png"
                                   />
                                 </div>
                               </div>
@@ -662,6 +647,102 @@ const Portfolio = () => {
                   </div>
                 </div>
               </li>
+              <li className="filter-item detail ai fullstack cloud">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
+                    <div className="main" data-img-url="img/portfolio/TechNews1.png" />
+                  </div>
+                  <div className="overlay" />
+                  {text}
+                  <div className="details">
+                    <span>Project</span>
+                    <h3>Full-Stack LLM News Summarizer</h3>
+                  </div>
+                  <a
+                    className="aali_tm_full_link portfolio_popup"
+                    href="#"
+                    onClick={() => setModal("project1")}
+                  />
+                  <div className={modal === "project1" ? "" : "hidden_content"}>
+                    <ModalBox close={setModal}>
+                      <div className="popup_details">
+                        <div className="top_image">
+                          <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
+                          <div
+                            className="main"
+                            data-img-url="img/portfolio/TechNews1.png"
+                          ></div>
+                        </div>
+                        <div className="portfolio_main_title">
+                          <span>Personal Project</span>
+                          <h3>Full-Stack LLM News Summarizer</h3>
+                          <div></div>
+                        </div>
+                        <div className="main_details">
+                          <div className="textbox">
+                            <p>
+                            To stay up to date with relevant tech news, I developed a fully automated Tech News Summarizer website 
+                            that handles daily headline scraping and article summarization. Using Python, I built a web scraper to
+                             extract news headlines, and the scraped data was stored in a PostgreSQL database hosted on Azure. The back-end was
+                              developed using Node.js and Express.js, and deployed on Azure App Service to efficiently manage and serve the article data. On the 
+                              front-end, I implemented a React-based interface, which displays the archive of articles along with
+                               view count analytics. I also integrated open-source models, including the BART LLM for article 
+                               summarization and FinBERT LLM for sentiment analysis, providing users with concise summaries and 
+                               sentiment scores for each article. The project allowed me to work with full-stack technologies, 
+                               focus on data automation, and enhance user experience with AI-powered insights. 
+                            </p>
+                            <p>
+                              Here are some of my main takeaways from the project:
+                            </p>
+                            <div className="takeaways">
+                              <ul>
+                                <li>Python, Node.js, PostgreSQL, React experience</li>
+                                <li>Web scraping, data storage, and API development</li>
+                                <li>Implementing machine learning models (BART, FinBERT) for summarization and sentiment analysis</li>
+                                <li>Full-stack development: front-end, back-end, and database integration</li>
+                                <li>Azure cloud platform experience: deploying backend services and managing PostgreSQL databases</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="additional_images">
+                          <ul>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/1-1.jpg"
+                                    alt="Tech News Scraper"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/TechNews2.png"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="list_inner">
+                                <div className="my_image">
+                                  <img
+                                    src="img/thumbs/1-1.jpg"
+                                    alt="Tech News Scraper"
+                                  />
+                                  <div
+                                    className="main"
+                                    data-img-url="img/portfolio/TechNews3.png"
+                                  />
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ModalBox>
+                  </div>
+                </div>
+              </li>
               <li className="filter-item detail ai">
                 <div className="list_inner">
                   <div className="image">
@@ -727,87 +808,6 @@ const Portfolio = () => {
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="Facial Emotion Detection" />
                                   <div className="main" data-img-url="img/portfolio/CNN3.png" />
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </ModalBox>
-                  </div>
-                </div>
-              </li>
-              <li className="filter-item detail fullstack freelance">
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/thumbs/1-1.jpg" alt="Static Restaurant Website" />
-                    <div className="main" data-img-url="img/portfolio/Soupa1.png" />
-                  </div>
-                  <div className="overlay" />
-                  {text}
-                  <div className="details">
-                    <span>Freelance Project</span>
-                    <h3>Restaurant Ecommerce Website</h3>
-                  </div>
-                  <a
-                    className="aali_tm_full_link portfolio_popup"
-                    href="#"
-                    onClick={() => setModal("project6")}
-                  />
-                  <div className={modal === "project6" ? "" : "hidden_content"}>
-                    <ModalBox close={setModal}>
-                      <div className="popup_details">
-                        <div className="top_image">
-                          <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div
-                            className="main"
-                            data-img-url="img/portfolio/Soupa1.png"
-                          ></div>
-                        </div>
-                        <div className="portfolio_main_title">
-                          <span>Freelance Project</span>
-                          <h3>Restaurant Ecommerce Website</h3>
-                          <div></div>
-                        </div>
-                        <div className="main_details">
-                          <div className="textbox">
-                            <p>
-                              As a freelance project, I built an e-commerce website for a local restaurant to help them establish an online presence and sell branded merchandise. I designed a clean, user-friendly interface and configured key website settings, including setting up their domain and hosting the site through Bluehost. I also integrated and customized an e-commerce section to manage products and online orders. Throughout the project, I worked closely with a non-technical business owner to understand their needs and deliver a solution tailored to their goals.
-                            </p>
-                            <p>
-                              Here are some of my key takeaways:
-                            </p>
-                            <div className="takeaways">
-                              <ul>
-                                <li>Configured hosting and domain management using Bluehost</li>
-                                <li>Designed and launched a functional, user-friendly website</li>
-                                <li>Set up and customized an e-commerce storefront for merchandise sales</li>
-                                <li>Collaborated effectively with a non-technical client to translate business needs into technical solutions</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="additional_images">
-                          <ul>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/Soupa2.png"
-                                  />
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="list_inner">
-                                <div className="my_image">
-                                  <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
-                                  <div
-                                    className="main"
-                                    data-img-url="img/portfolio/Soupa3.png"
-                                  />
                                 </div>
                               </div>
                             </li>
