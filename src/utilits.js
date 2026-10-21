@@ -133,6 +133,8 @@ export const dataImage = () => {
   let d = document.querySelectorAll("[data-img-url");
   for (let i = 0; i < d.length; i++) {
     const element = d[i];
+    // Popup images load when their popup opens, not with the page
+    if (element.closest(".hidden_content")) continue;
     element.style.backgroundImage = `url(${element.getAttribute(
       "data-img-url"
     )})`;

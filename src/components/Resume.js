@@ -36,6 +36,25 @@ const Resume = () => {
                           <span className="icon">{edu}</span>
                           <div className="info">
                             <div className="left">
+                              <h3>Georgia Institute of Technology</h3>
+                              <span>MS in Computer Science</span>
+                            </div>
+                            <div className="right">
+                              <span>2026 - 2027</span>
+                            </div>
+                          </div>
+                          <div className="text">
+                            <p>
+                              Specialization in Machine Learning (expected December 2027)
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="list_inner">
+                          <span className="icon">{edu}</span>
+                          <div className="info">
+                            <div className="left">
                               <h3>University of Florida</h3>
                               <span>BS in Computer Science Engineering</span>
                             </div>

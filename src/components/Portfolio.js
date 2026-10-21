@@ -48,6 +48,9 @@ const Portfolio = () => {
   };
   // Model Box
   const [modal, setModal] = useState(null);
+  useEffect(() => {
+    dataImage();
+  }, [modal]);
   return (
     <div className="aali_tm_section help" id="portfolio">
       {video && <Popup close={setVideo} content={videoContent} />}
@@ -350,7 +353,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/Stealth2.jpg"
+                                    data-img-url="img/portfolio/Stealth2.webp"
                                   />
                                 </div>
                               </div>
@@ -477,7 +480,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Static Restaurant Website" />
-                    <div className="main" data-img-url="img/portfolio/Soupa1.png" />
+                    <div className="main" data-img-url="img/portfolio/Soupa1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -497,7 +500,7 @@ const Portfolio = () => {
                           <img src="img/thumbs/4-2.jpg" alt="" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/Soupa1.png"
+                            data-img-url="img/portfolio/Soupa1.webp"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
@@ -531,7 +534,7 @@ const Portfolio = () => {
                                   <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/Soupa2.png"
+                                    data-img-url="img/portfolio/Soupa2.webp"
                                   />
                                 </div>
                               </div>
@@ -542,7 +545,7 @@ const Portfolio = () => {
                                   <img src="img/thumbs/4-2.jpg" alt="Restaurant Ecommerce Website" />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/Soupa3.png"
+                                    data-img-url="img/portfolio/Soupa3.webp"
                                   />
                                 </div>
                               </div>
@@ -558,7 +561,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Job Board Web App" />
-                    <div className="main" data-img-url="img/portfolio/JobBoard1.png" />
+                    <div className="main" data-img-url="img/portfolio/JobBoard1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -578,7 +581,7 @@ const Portfolio = () => {
                           <img src="img/thumbs/4-2.jpg" alt="" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/JobBoard1.png"
+                            data-img-url="img/portfolio/JobBoard1.webp"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
@@ -635,7 +638,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/JobBoard3.png"
+                                    data-img-url="img/portfolio/JobBoard3.webp"
                                   />
                                 </div>
                               </div>
@@ -651,7 +654,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
-                    <div className="main" data-img-url="img/portfolio/TechNews1.png" />
+                    <div className="main" data-img-url="img/portfolio/TechNews1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -671,7 +674,7 @@ const Portfolio = () => {
                           <img src="img/thumbs/1-1.jpg" alt="Tech News Scraper" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/TechNews1.png"
+                            data-img-url="img/portfolio/TechNews1.webp"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
@@ -717,7 +720,7 @@ const Portfolio = () => {
                                   />
                                   <div
                                     className="main"
-                                    data-img-url="img/portfolio/TechNews2.png"
+                                    data-img-url="img/portfolio/TechNews2.webp"
                                   />
                                 </div>
                               </div>
@@ -747,7 +750,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Facial Emotion Detection" />
-                    <div className="main" data-img-url="img/portfolio/CNN1.png" />
+                    <div className="main" data-img-url="img/portfolio/CNN1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -767,7 +770,7 @@ const Portfolio = () => {
                           <img src="img/thumbs/4-2.jpg" alt="" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/CNN1.png"
+                            data-img-url="img/portfolio/CNN1.webp"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
@@ -894,7 +897,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="GatorRides" />
-                    <div className="main" data-img-url="img/portfolio/GatorRides1.png" />
+                    <div className="main" data-img-url="img/portfolio/GatorRides1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -912,7 +915,7 @@ const Portfolio = () => {
                       <div className="popup_details">
                         <div className="top_image">
                           <img src="img/thumbs/4-2.jpg" alt="" />
-                          <div className="main" data-img-url="img/portfolio/GatorRides1.png" />
+                          <div className="main" data-img-url="img/portfolio/GatorRides1.webp" />
                         </div>
                         <div className="portfolio_main_title">
                           <span>Personal Project</span>
@@ -958,7 +961,7 @@ const Portfolio = () => {
                               <div className="list_inner">
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="GatorRides" />
-                                  <div className="main" data-img-url="img/portfolio/GatorRides2.png" />
+                                  <div className="main" data-img-url="img/portfolio/GatorRides2.webp" />
                                 </div>
                               </div>
                             </li>
@@ -966,7 +969,7 @@ const Portfolio = () => {
                               <div className="list_inner">
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="GatorRides" />
-                                  <div className="main" data-img-url="img/portfolio/GatorRides3.png" />
+                                  <div className="main" data-img-url="img/portfolio/GatorRides3.webp" />
                                 </div>
                               </div>
                             </li>
@@ -974,7 +977,7 @@ const Portfolio = () => {
                               <div className="list_inner">
                                 <div className="my_image">
                                   <img src="img/thumbs/4-2.jpg" alt="GatorRides" />
-                                  <div className="main" data-img-url="img/portfolio/GatorRides4.png" />
+                                  <div className="main" data-img-url="img/portfolio/GatorRides4.webp" />
                                 </div>
                               </div>
                             </li>
@@ -1061,7 +1064,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="Mitchell image" />
-                    <div className="main" data-img-url="img/portfolio/Portfolio1.png" />
+                    <div className="main" data-img-url="img/portfolio/Portfolio1.webp" />
                   </div>
                   <div className="overlay" />
                   {text}
@@ -1081,7 +1084,7 @@ const Portfolio = () => {
                           <img src="img/thumbs/4-2.jpg" alt="" />
                           <div
                             className="main"
-                            data-img-url="img/portfolio/Portfolio1.png"
+                            data-img-url="img/portfolio/Portfolio1.webp"
                           ></div>
                         </div>
                         <div className="portfolio_main_title">
