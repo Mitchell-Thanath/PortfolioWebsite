@@ -40,7 +40,7 @@ const Resume = () => {
                               <span>MS in Computer Science</span>
                             </div>
                             <div className="right">
-                              <span>2026 - 2027</span>
+                              <span style={{ whiteSpace: "nowrap" }}>2026 - 2027</span>
                             </div>
                           </div>
                           <div className="text">
